@@ -1,0 +1,9 @@
+.g-button{
+    border-radius: 5px;
+    &--primary {
+        background-color: $primary;
+    }
+    &--secundary {
+        background-color: $secondary    ;
+    }
+}
