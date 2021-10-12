@@ -1,9 +1,19 @@
 .g-button{
     border-radius: 5px;
+    color: #ffffff;
+    width: 328px;
+    height: 56px;
+    border: none;
+    outline: none;
+    text-decoration: none;
     &--primary {
         background-color: $primary;
     }
     &--secundary {
         background-color: $secondary    ;
     }
+    &:hover {
+        color: white;
+        background-color: #3b6b97;
+      }
 }

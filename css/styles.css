@@ -1,21 +1,31 @@
 .g-button {
   border-radius: 5px;
+  color: #ffffff;
+  width: 328px;
+  height: 56px;
+  border: none;
+  outline: none;
+  text-decoration: none;
 }
 .g-button--primary {
-  background-color: red;
+  background-color: #5393D0;
 }
 .g-button--secundary {
-  background-color: aquamarine;
+  background-color: #21E7B7;
+}
+.g-button:hover {
+  color: white;
+  background-color: #3b6b97;
 }
 
-.g-input{
+.g-input {
   border: 1px;
-  border-radius: 3px;
   border-style: solid;
-}
-
-.g-input--secundary{
-  border-color: aquamarine;
+  border-radius: 3px;
+  border-color: #AAAAAA;
+  color: #AAAAAA;
+  width: 328px;
+  height: 56px;
 }
 
 /*# sourceMappingURL=styles.css.map */

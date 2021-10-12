@@ -2,10 +2,9 @@
     border: 1px;
     border-style: solid;
     border-radius: 3px;
-    &--primary {
-        border-color: $primary;
-    }
-    &--secundary {
-    border-color: $secondary    ;
-    }
+    border-color: $tertiary;
+    color: $tertiary;
+    width: 328px;
+    height: 56px;
+    
 }
