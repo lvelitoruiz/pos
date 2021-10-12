@@ -1,31 +1,82 @@
 .g-button {
   border-radius: 5px;
-  color: #ffffff;
-  width: 328px;
-  height: 56px;
+  font-size: 16px;
   border: none;
   outline: none;
   text-decoration: none;
 }
 .g-button--primary {
   background-color: #5393D0;
+  color: #ffffff;
+  height: 56px;
+  width: 328px;
 }
 .g-button--secundary {
-  background-color: #21E7B7;
+  background-color: #1bd5ea;
+  color: #ffffff;
+  height: 30px;
+  width: 160px;
 }
-.g-button:hover {
-  color: white;
-  background-color: #3b6b97;
+.g-button--thirty {
+  background-color: #ffffff;
+  color: #5393D0;
+  height: 56px;
+  width: 328px;
+}
+.g-button--new {
+  background-color: #ffffff;
+  border: #1bd5ea 1px solid;
+  font-size: 12px;
+  height: 24px;
+  width: 70px;
 }
 
 .g-input {
-  border: 1px;
+  border: 2px;
   border-style: solid;
   border-radius: 3px;
-  border-color: #AAAAAA;
+  outline: none;
+}
+.g-input--primary {
   color: #AAAAAA;
   width: 328px;
   height: 56px;
+  padding-left: 10px;
+}
+.g-input--secondary {
+  color: #1BD5EA;
+  border-bottom: 1px;
+  width: 90px;
+  height: 30px;
+  padding-left: 10px;
+}
+
+.g-label {
+  background: red;
+  border-radius: 3px;
+  font-size: 14px;
+  color: #5393D0;
+  padding: 8px 10px;
+  cursor: pointer;
+  border: none;
+}
+.g-label:hover {
+  color: white;
+  background: #1BD5EA;
+}
+
+.btn-group {
+  border: 1px solid #1bd5ea;
+  border-radius: 3px;
+  overflow: scroll;
+  height: 30px;
+  flex-wrap: initial;
+}
+.btn-group--primary {
+  white-space: nowrap;
+  font-size: 12px;
+  color: #222222;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=styles.css.map */

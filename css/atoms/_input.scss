@@ -1,10 +1,19 @@
 .g-input{
-    border: 1px;
+    border: 2px;
     border-style: solid;
     border-radius: 3px;
-    border-color: $tertiary;
-    color: $tertiary;
-    width: 328px;
-    height: 56px;
-    
+    outline: none;
+    &--primary{
+        color: $tertiary;
+        width: 328px;
+        height: 56px;
+        padding-left: 10px;
+    }
+    &--secondary{
+        color: $borde;
+        border-bottom: 1px;
+        width: 90px;
+        height: 30px;
+        padding-left: 10px;
+    }
 }
