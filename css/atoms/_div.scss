@@ -1,0 +1,7 @@
+.g-div{
+    display: flex;
+    &--colum{
+        flex-direction: column;
+        position: relative;
+    }
+}

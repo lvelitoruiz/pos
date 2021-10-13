@@ -1,19 +1,32 @@
 .g-input{
-    border: 2px;
-    border-style: solid;
-    border-radius: 3px;
     outline: none;
+    border: none;
     &--primary{
+        border: 2px solid;
+        border-radius: 3px;
         color: $tertiary;
         width: 328px;
         height: 56px;
         padding-left: 10px;
     }
+    
     &--secondary{
-        color: $borde;
+        border: 2px solid;
+        border-radius: 3px;
+        color: green;
         border-bottom: 1px;
         width: 90px;
         height: 30px;
         padding-left: 10px;
+    }
+    &--short{
+        border-bottom: $primary 2px solid;
+        color: #222222;
+        font-weight: 600;
+        height: 50px;
+        font-size: 24px;
+        text-align: center;
+        width: 32px;
+        margin-right: 16px;
     }
 }
