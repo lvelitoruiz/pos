@@ -71,6 +71,11 @@
   box-shadow: none;
 }
 
+.icon--five {
+  font-size: 20px;
+  color: #34538A;
+}
+
 .g-input {
   border: 2px;
   border-style: solid;
@@ -119,6 +124,26 @@
   cursor: pointer;
 }
 
+.search {
+  align-items: center;
+  background-color: #eee;
+  border-radius: 4px;
+  display: flex;
+  height: 30px;
+  min-width: 300px;
+  padding: 3px 8px 3px 12px;
+}
+.search input {
+  background: transparent;
+  border: 0;
+  font-size: 12px;
+  margin-right: 10px;
+  width: 100%;
+}
+.search i {
+  color: #aaaaaa;
+}
+
 .product {
   display: flex;
   align-items: flex-start;
@@ -157,6 +182,26 @@
   font-weight: 600;
 }
 
+.search {
+  align-items: center;
+  background-color: #eee;
+  border-radius: 4px;
+  display: flex;
+  height: 30px;
+  min-width: 300px;
+  padding: 3px 8px 3px 12px;
+}
+.search input {
+  background: transparent;
+  border: 0;
+  font-size: 12px;
+  margin-right: 10px;
+  width: 100%;
+}
+.search i {
+  color: #aaaaaa;
+}
+
 .header {
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16);
   height: 48px;
@@ -177,6 +222,40 @@
 }
 .body-content--white {
   background: white;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
 }
 
 .home--body .product {
