@@ -1,32 +1,82 @@
-.g-button{
+.g-button {
     border-radius: 5px;
     font-size: 16px;
     border: none;
     outline: none;
     text-decoration: none;
+
     &--primary {
         background-color: $primary;
-        color: #ffffff;
+        color: white;
         height: 56px;
         width: 328px;
     }
+
     &--secundary {
         background-color: $secondary;
-        color: #ffffff;
+        color: white;
         height: 30px;
         width: 160px;
     }
+
     &--thirty{
-        background-color: #ffffff;
+        background-color: white;
         color: $primary;
         height: 56px;
         width: 328px;
     }
+
     &--new{
-        background-color: #ffffff;
+        background-color: white;
         border: #1bd5ea 1px solid;
         font-size: 12px;
         height: 24px;
         width: 70px;
     }
+
+    &--group {
+        display: inline-flex;
+        overflow: scroll;
+        padding-bottom: 10px;
+        padding-top: 20px;
+        position: relative;
+        vertical-align: middle;
+        width: 100%;
+        border-bottom: 1px solid #eee;
+        
+      
+        &--item {
+            margin-bottom: 8px;
+            margin-right: 8px;
+        }
+    }
+
+    &--check {
+        border: solid 1px $secondary;
+        background-color: white;
+        border-radius: 4px;
+        color: #222;
+        font-size: 12px;
+
+        &:hover {
+            color: white;
+            background-color: $secondary;
+            border-color: $secondary;
+        }
+    }
 }
+
+.btn-check:active+.g-button--check, 
+.btn-check:checked+.g-button--check, 
+.g-button--check.active, 
+.g-button--check.dropdown-toggle.show, 
+.g-button--check:active {
+    color: white;
+    background-color: $secondary;
+    border-color: $secondary;
+}
+
+.btn-check:focus+.g-button--check, .g-button--check:focus {
+    box-shadow: none;
+}
+
