@@ -1,0 +1,13 @@
+.g-span{
+    font-family: poppins;
+    &--primary{
+        color: $five;
+        font-weight: 600;
+        font-size: 16px;
+    }
+    &--secondary{
+        color: $secondary;
+        font-weight: normal;
+        font-size: 14px;
+    }
+}
