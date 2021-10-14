@@ -64,6 +64,14 @@
             border-color: $secondary;
         }
     }
+
+    &--line {
+        border: solid 1px #1bd5ea;
+        border-radius: 15px;
+        font-size: 12px;
+        padding: 4px 16px;
+        background: white;
+    }
 }
 
 .btn-check:active+.g-button--check, 

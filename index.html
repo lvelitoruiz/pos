@@ -25,45 +25,43 @@
               </a>
               <!-- Modal -->
               <div class="modal fade " id="modalLogin" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modalLoginLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-login modal-dialog modal-dialog-centered">
                   <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="modalLoginLabel">Modal title</h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
                     <div class="modal-body">
-                        <div>
-                            <span class="g-span g-span--primary">Iniciar sesión</span>
+                        <div class="modal-login--close">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
-                        <form action="">
-                            <div class="mb-3">
-                                <div class="g-div">
-                                    <input type="text" name="" id="" class="g-input g-input--primary" placeholder="Correo electrónico">
+                        <div class="modal-login--img">
+                            <img src="./img/login.svg" alt="">
+                        </div>
+                        <div class="modal-login--title mb-4">
+                            <span>Iniciar sesión</span>
+                        </div>
+                        <form class="row justify-content-center" action="">
+                            <div class="col-md-8">
+                                <div class="modal-login--form">
+                                    <div class="mb-3">
+                                        <input type="text" name="" id="" class="g-input g-input--primary" placeholder="Correo electrónico">
+                                    </div>
+                                    <div class="mb-3">
+                                        <input type="text" class="g-input g-input--primary" placeholder="Contraseña">
+                                    </div>
+                                    <div class="mb-3 text-center">
+                                        <button class="g-button g-button--primary">Iniciar sesión</button>
+                                    </div>
+                                    <div class="mb-3 text-center">
+                                        <a href="" class="g-span g-span--secondary">Olvidé mi contraseña</a>
+                                    </div>
                                 </div>
-                            </div>
-                            <div>
-                                <div>
-                                    <input type="text" class="g-input g-input--primary" placeholder="Contraseña">
+                                <div class="text-center">
+                                    <span>Soy nuevo</span>
+                                    <a href="" class="g-span g-span--secondary">Ir a registrarme</a>
+                                </div>
+                                <div class="text-center mt-4 mb-5">
+                                    <button class="g-button--line">Ver demo</button>
                                 </div>
                             </div>
                         </form>
-                        <div>
-                            <a href="" class="g-span g-span--secondary">Olvidé mi contraseña</a>
-                        </div>
-                        <div>
-                            <button class="g-button g-button--primary">Iniciar sesión</button>
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                      <div>
-                          <div>
-                              <span>Soy nuevo</span>
-                              <a href="" class="g-span g-span--secondary">Ir a registrarme</a>
-                          </div>
-                      </div>
-                      <div>
-                          <button>Ver demo</button>
-                      </div>
                     </div>
                   </div>
                 </div>
