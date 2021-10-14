@@ -56,6 +56,13 @@
   background-color: #1bd5ea;
   border-color: #1bd5ea;
 }
+.g-button--line {
+  border: solid 1px #1bd5ea;
+  border-radius: 15px;
+  font-size: 12px;
+  padding: 4px 16px;
+  background: white;
+}
 
 .btn-check:active + .g-button--check,
 .btn-check:checked + .g-button--check,
@@ -254,6 +261,35 @@
   right: 25px;
   font-size: 36px;
   margin-left: 50px;
+}
+
+.modal-login .modal-body {
+  padding: 0;
+}
+.modal-login--close {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+}
+.modal-login--close button {
+  color: white;
+}
+.modal-login--img {
+  background: #b8d2e3;
+  padding-top: 20px;
+}
+.modal-login--img img {
+  width: 100%;
+}
+.modal-login--title {
+  color: #34538A;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+}
+.modal-login--form {
+  border-bottom: 1px solid #eee;
+  margin-bottom: 10px;
 }
 
 .home--body .product {
