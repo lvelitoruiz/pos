@@ -75,18 +75,22 @@
               <div class="modal fade" id="modalEmail" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modalLoginLabel" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered">
                   <div class="modal-content g-modal g-modal--medium">
-                    <div class="modal-header">
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        <h3 class="g-span g-span--primary">Ingrese su Email</h3>
+                    <div class="g-modal--head">
+                      <div class="icon--primary">
+                        <i class="icon-arrow-left" data-bs-dismiss="modal"></i>
+                      </div>
+                      <div class="modal-login--title flex-grow-1">
+                        <span>Ingrese su Email</span>
+                      </div>
                     </div>
-                    <div class="modal-body">
-                        <form action="">
+                    <div class="g-modal--body">
+                        <form action="" class="mt-5">
                             <div class="mb-3">
                                 <input type="text" name="" id="" class="g-input g-input--primary" placeholder="Correo electrónico">
                             </div>
                         </form>
                     </div>
-                    <div class="modal-footer">
+                    <div class="modal-footer g-modal--footer">
                       <div>
                         <p>Al continuar recibirás un SMS de confirmación.</p>
                     </div>
@@ -104,27 +108,32 @@
             <div class="modal fade" id="modalCodigo" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modalLoginLabel" aria-hidden="true">
               <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content g-modal g-modal--medium">
-                  <div class="modal-header">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                      <h3 class="g-span g-span--primary">Ingrese el código de verificación</h3>
+                  <div class="g-modal--head">
+                    <div class="icon--primary">
+                      <i class="icon-arrow-left" data-bs-dismiss="modal"></i>
+                    </div>
+                    <div class="modal-login--title flex-grow-1">
+                      <span>Ingrese el código de verificación</span>
+                    </div>
                   </div>
-                  <div class="modal-body">
-                      <form action="">
-                          <div class="mb-3">
+                  <div class="g-modal--body">
+                      <form action="" class="mt-4">
+                          <div class="mb-3 ">
                               <div class="g-div g-div--colum">
-                                  <p>Escribe los 4 dígitos enviados al:</p>
-                                  <span class="g-span g-span--secondary">+51992121047</span>
-                                  <div class="g-div">
-                                  <input type="text" class="g-input g-input--short" placeholder="0">
-                                  <input type="text" class="g-input g-input--short" placeholder="0">
-                                  <input type="text" class="g-input g-input--short" placeholder="0">
-                                  <input type="text" class="g-input g-input--short" placeholder="0">
-                                  </div>
+                                <span class="g-span--primary">Escribe los 4 dígitos enviados al:</span>
+                                <span class="g-span--secondary">+51992121047</span>
                               </div>
+                              <div class="g-div">
+                                <input type="text" class="g-input g-input--short" placeholder="0">
+                                <input type="text" class="g-input g-input--short" placeholder="0">
+                                <input type="text" class="g-input g-input--short" placeholder="0">
+                                <input type="text" class="g-input g-input--short" placeholder="0">
+                              </div>
+                              
                           </div>
                       </form>
                   </div>
-                  <div class="modal-footer">
+                  <div class="modal-footer g-modal--footer">
                     <div>
                       <button class="g-button g-button--primary">Verificar</button>
                   </div>
@@ -137,16 +146,23 @@
             </li>
             <div class="modal fade" id="modalRegistro" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modalLoginLabel" aria-hidden="true">
               <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                  <div class="modal-header">
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                      <h3 class="g-span g-span--primary">Crear mi perfil</h3>
+                <div class="modal-content  g-modal--create">
+                  <div class="g-modal--head">
+                    <div class="icon--primary">
+                      <i class="icon-arrow-left" data-bs-dismiss="modal"></i>
+                    </div>
+                    <div class="modal-login--title flex-grow-1">
+                      <span>Crear mi perfil</span>
+                    </div>
                   </div>
                   <div class="modal-body">
-                      <form action="">
+                      <form action="" class="g-modal--body">
                           <div class="mb-3">
                               <div class="g-div g-div--colum">
-                                  <img src="./img/img_create.png" alt="">
+                                <div class="g-modal--img">
+                                  <img src="./img/img_create.svg" alt="">
+                                </div>
+                                  
                                   <div class="mb-3">
                                       <input type="text" class="g-input g-input--primary" placeholder="Nombre">
                                   </div>
@@ -166,12 +182,16 @@
                           </div>
                         </form>   
                   </div>
-                  <div class="modal-footer">
-                    <div class="g-div">
-                      <input type="checkbox" name="privacidad" id="privacidad">
-                      <label for="privacidad">
-                        Acepto Términos y condiciones y las Políticas de Privacidad de Datos Personales.
-                        </label>
+                  <div class="modal-footer g-modal--footer">
+                    <div class="g-div g-div--center">
+                      <div class="g-div--check">
+                        <input type="checkbox" name="privacidad" id="privacidad" class="g-input--check">
+                      </div>
+                      <div>
+                        <label for="privacidad">
+                          Acepto Términos y condiciones y las Políticas de Privacidad de Datos Personales.
+                          </label>
+                      </div>
                     </div>
                     <div>
                       <button class="g-button g-button--primary">Registrar</button>

@@ -2,12 +2,12 @@
     outline: none;
     border: none;
     &--primary{
-        border: 2px solid;
-        border-radius: 3px;
-        color: $tertiary;
+        border: 1px solid $tertiary;
+        border-radius: 4px;
+        color: $four;
         width: 328px;
         height: 56px;
-        padding-left: 10px;
+        padding-left: 16px;
     }
     
     &--secondary{
@@ -27,6 +27,12 @@
         font-size: 24px;
         text-align: center;
         width: 32px;
-        margin-right: 16px;
+        margin-left: 16px;
+        margin-top: 28px;
+    }
+
+    &--check{
+        width: 24px;
+        background-color: pink;
     }
 }
