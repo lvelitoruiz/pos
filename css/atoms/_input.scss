@@ -1,4 +1,4 @@
-.g-input{
+.g-input {
     outline: none;
     border: none;
     &--primary{
@@ -21,12 +21,59 @@
     }
     &--short{
         border-bottom: $primary 2px solid;
-        color: #222222;
+        color: $text;
         font-weight: 600;
         height: 50px;
         font-size: 24px;
         text-align: center;
         width: 32px;
         margin-right: 16px;
+    }
+
+    &--material {
+        font-size: 14px;
+        position: relative;
+
+        label {
+            width: 100%;
+        }
+
+        input {
+            width: 100%;
+            border: none;
+            outline: none;
+            border: 2px solid $tertiary;
+            padding-bottom: 16px;
+            padding-top: 16px;
+            padding-left: 10px;
+            padding-right: 10px;
+            border-radius: 3px;
+            color: $text;
+
+            &.focus {
+                border-color: $secondary;
+            }
+        }
+
+        .placeholder {
+            position: absolute;
+            top: 17px;
+            left: 10px;
+            transition: all 0.3s;
+            pointer-events: none;
+            color: $text;
+            background: white;
+
+            &.focus {
+                font-size: 12px;
+                top: -8px;
+                color: $secondary;
+                background: white;
+                opacity: 1;
+                padding-left: 5px;
+                padding-right: 5px;
+                left: 5px;
+            }
+        }
     }
 }
