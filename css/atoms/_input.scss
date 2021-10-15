@@ -21,7 +21,7 @@
     }
     &--short{
         border-bottom: $primary 2px solid;
-        color: $text;
+        color: $four;
         font-weight: 600;
         height: 50px;
         font-size: 24px;
@@ -29,6 +29,10 @@
         width: 32px;
         margin-left: 16px;
         margin-top: 28px;
+        &::placeholder{
+            color: $tertiary;
+            font-weight: normal;
+        }
     }
 
     &--check{
@@ -54,7 +58,7 @@
             padding-left: 10px;
             padding-right: 10px;
             border-radius: 3px;
-            color: $text;
+            color: $four;
 
             &.focus {
                 border-color: $secondary;
@@ -67,7 +71,7 @@
             left: 10px;
             transition: all 0.3s;
             pointer-events: none;
-            color: $text;
+            color: $four;
             background: white;
 
             &.focus {
