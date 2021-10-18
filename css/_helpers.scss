@@ -1,0 +1,40 @@
+// size
+$items: 8, 10, 11, 12, 14, 18, 24, 30, 32, 40;
+@each $item in $items {
+  .h-fz--#{$item} {
+    font-size: $item * 1px;
+  }
+}
+
+// border
+.h-border {
+  &--bottom {
+    border-bottom: 1px solid $gray;
+  }
+}
+
+// color
+.h-color {
+  &--primary {
+    color: $primary;
+  }
+
+  &--secondary {
+    color: $secondary;
+  }
+
+  &--text {
+    color: $text;
+  }
+}
+
+
+.h-fw {
+  &--300 {
+    font-weight: 300;
+  }
+
+  &--500 {
+    font-weight: 500;
+  }
+}

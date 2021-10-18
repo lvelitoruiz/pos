@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
 
 @import "./_variables.scss";
+@import "./_helpers.scss";
 @import "./atoms/_button.scss";
 @import "./atoms/_icons.scss";
 @import "./atoms/_input.scss";
@@ -14,6 +15,7 @@
 @import "./organism/nav.scss";
 @import "./organism/modal-login.scss";
 @import "./organism/list-products.scss";
+@import "./organism/_calculator.scss";
 @import "./template/home.scss";
 @import "./atoms/span.scss";
 @import "./atoms/div.scss";

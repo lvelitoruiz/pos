@@ -1,0 +1,139 @@
+<!doctype html>
+<html class="h-100" lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <title>POS</title>
+  </head>
+  <body class="h-100 home" style="background-color: #f9fafc; color: #222;">
+    <div class="container-fluid p-0 h-100">
+      <div class="row m-0">
+        <div class="col-md-4 p-0">
+          <div class="header">
+            <div class="d-flex align-items-center h-100 p-2 justify-content-between">
+              <div class="d-flex align-items-center h-100">
+                <i class="icon-arrow-left icon--five"></i>
+                <h2 class="ms-2">Ticket 3</h2>
+              </div>
+              <div class="d-flex align-items-center h-100">
+                <div class="ms-4 d-flex align-center">
+                  <i class="icon-trash icon--five me-3"></i>
+                  <i class="icon-add-person icon--five me-2"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-8 pe-0 ps-2">
+          <div class="header">
+          </div>
+        </div>
+      </div>
+      <div class="row m-0 body-content">
+        <div class="col-md-4 p-0">
+          <div class="h-100 body-content--white">
+            <div class="list-products">
+              <div class="list-products--detail">
+                <ul class="list-products--detail__number">
+                  <li>
+                    <p class="m-0 title">Latte</p>
+                    <div class="d-flex align-items-center">
+                      <div class="add-number mr-5">
+                        <div class="control" id="minus"><span class="icon-minus"></span></div>
+                        <div id="number">0</div>
+                        <div class="control" id="plus"><span class="icon-add"></span></div>
+                      </div>
+                      <p class="number m-0 ps-5">S/8.90</p>
+                    </div>
+                  </li>
+                  <li>
+                    <p class="m-0 title">Latte</p>
+                    <div class="d-flex align-items-center">
+                      <div class="add-number mr-5">
+                        <div class="control" id="minus"><span class="icon-minus"></span></div>
+                        <div id="number">0</div>
+                        <div class="control" id="plus"><span class="icon-add"></span></div>
+                      </div>
+                      <p class="number m-0 ps-5">S/8.90</p>
+                    </div>
+                  </li>
+                  <li>
+                    <p class="m-0 title">Latte</p>
+                    <div class="d-flex align-items-center">
+                      <div class="add-number mr-5">
+                        <div class="control" id="minus"><span class="icon-minus"></span></div>
+                        <div id="number">0</div>
+                        <div class="control" id="plus"><span class="icon-add"></span></div>
+                      </div>
+                      <p class="number m-0 ps-5">S/8.90</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="list-products--price">
+                <div class="d-flex align-items-center justify-content-between mb-1">
+                  <p class="m-0">Subtotal</p>
+                  <p class="m-0">S/ 26.70</p>
+                </div>
+                <div class="d-flex align-items-center justify-content-between mb-1">
+                  <p class="m-0">Descuento</p>
+                  <p class="m-0">S/ 26.70</p>
+                </div>
+                <div class="d-flex align-items-center justify-content-between mb-3">
+                  <p class="m-0">IGV</p>
+                  <p class="m-0">S/ 26.70</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-8 pe-0 ps-2">
+          <div class="body-content--detail">
+            <div class="h-border--bottom h-fw--500">
+              <p class="h-fz--12 mb-1">Monto</p>
+              <p class="h-fz--32 h-color--secondary">S/29.50</p>
+            </div>
+            <div class="h-border--bottom d-flex align-items-start pb-3 pt-3">
+              <i class="icon-add-person h-fz--18 pe-3 h-color--secondary"></i>
+              <div class="h-fz--12 h-fw--500">
+                <p class="mb-1">Nombre: Juan Cazorla</p>
+                <p class="mb-1">DNI: 54782255</p>
+                <p class="mb-1">Boleta de venta</p>
+              </div>
+            </div>
+            <a href="./cash-payment.html" class="text-decoration-none h-border--bottom d-flex align-items-center pb-3 pt-3 h-fz--12 h-fw--500">
+              <i class="icon-cash h-fz--18 pe-3 h-color--secondary"></i>
+              <p class="m-0 w-100 h-color--text">Pagar con efectivo</p>
+              <i class="icon-arrow-right-2 h-fz--13 h-color--secondary"></i>
+            </a>
+            <a href="" class="text-decoration-none h-border--bottom d-flex align-items-center pb-3 pt-3 h-fz--12 h-fw--500">
+              <i class="icon-card h-fz--18 pe-3 h-color--secondary"></i>
+              <p class="m-0 w-100 h-color--text">Pagar con tarjeta</p>
+              <i class="icon-arrow-right-2 h-fz--13 h-color--secondary"></i>
+            </a>
+            <a href="" class="text-decoration-none h-border--bottom d-flex align-items-center pb-3 pt-3 h-fz--12 h-fw--500">
+              <i class="icon-qr h-fz--18 pe-3 h-color--secondary"></i>
+              <p class="m-0 w-100 h-color--text">Pagar con billetera QR</p>
+              <i class="icon-arrow-right-2 h-fz--13 h-color--secondary"></i>
+            </a>
+            <a href="./split-payment.html" class="text-decoration-none h-border--bottom d-flex align-items-center pb-3 pt-3 h-fz--12 h-fw--500">
+              <i class="icon-divide h-fz--18 pe-3 h-color--secondary"></i>
+              <p class="m-0 w-100 h-color--text">Dividir pago</p>
+              <i class="icon-arrow-right-2 h-fz--13 h-color--secondary"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="./js/main.js"></script>
+  </body>
+</html>
