@@ -1,7 +1,11 @@
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
 .home {
  &--body {
   .product {
-    height: calc(100vh - 224px);
+    height: calc(100vh - 208px);
     overflow: auto;
   }
 
@@ -12,6 +16,26 @@
     width: 100%;
     height: 88px;
     padding-left: 28px;
+
+    p {
+      font-size: 12px;
+      padding-right: 10px;
+    }
+
+    &--item {
+      font-size: 20px;
+      position: relative;
+      margin-right: 6px;
+      color: $five;
+      
+      span {
+        position: absolute;
+        left: 7px;
+        font-size: 12px;
+        top: 3px;
+        color: #222;
+      }
+    }
   }
  } 
 }

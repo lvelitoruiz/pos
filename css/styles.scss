@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
 @import "./_variables.scss";
 @import "./atoms/_button.scss";
 @import "./atoms/_icons.scss";
 @import "./atoms/_input.scss";
 @import "./atoms/label.scss";
+@import "./atoms/number.scss";
 @import "./moleculas/search.scss";
 @import "./moleculas/product.scss";
 @import "./moleculas/search.scss";
@@ -10,6 +13,7 @@
 @import "./organism/body.scss";
 @import "./organism/nav.scss";
 @import "./organism/modal-login.scss";
+@import "./organism/list-products.scss";
 @import "./template/home.scss";
 @import "./atoms/span.scss";
 @import "./atoms/div.scss";
