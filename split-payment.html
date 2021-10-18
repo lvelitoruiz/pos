@@ -88,7 +88,73 @@
                   <div class="d-flex align-items-center">
                     <i class="icon-document pe-2 h-fz--18 h-color--secondary"></i>
                     <div>
-                      <p class="mb-0 h-fz--12">Tipo de comprobante</p>
+                      <p class="mb-0 h-fz--12" type="button" data-bs-toggle="modal" data-bs-target="#modalComprobante">
+                        Tipo de comprobante
+                      </p>
+                      <div class="modal fade" id="modalComprobante" data-bs-backdrop="static" data-bs-keyboard="false"
+                      tabindex="-1" aria-labelledby="modalLoginLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered">
+                          <div class="modal-content g-modal g-modal--medium">
+                              <div class="g-modal--head">
+                                  <div class="modal-login--title flex-grow-1">
+                                      <span>Comprobante</span>
+                                  </div>
+                                  <div class="modal-login--close">
+                                      <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                          aria-label="Close"></button>
+                                  </div>
+                              </div>
+                              <div class="g-modal--large">
+                                  <div class="g-div--colum">
+                                      <div>
+                                          <div>
+                                              <span class="g-span--primary">Elije el tipo de comprobante</span>
+                                          </div>
+                                          <div class="list-check">
+                                              <input  class="btn-radio" type="radio" name="selector" id="bol">
+                                              <label for="bol">Boleta</label>
+                                              <div class="radiobutton"></div>
+                                          </div>
+                                          <div class="list-check">
+                                              <input class="btn-radio" type="radio" name="selector" id="fact">
+                                              <label for="fact">Factura</label>
+                                              <div class="radiobutton"></div>    
+                                          </div>
+                                      </div>
+                                      <div class="g-div--form">
+                                          <form action="" class="mt-3">
+                                              <div class="g-input--material  g-input--primary mt-5">
+                                                  <label for="material-input">
+                                                      <input type="text">
+                                                      <span class="placeholder">RUC</span>
+                                                  </label>
+                                              </div>
+                                              <div class="g-input--material  g-input--primary mt-5">
+                                                  <label for="material-input">
+                                                      <input type="text">
+                                                      <span class="placeholder">Razón social</span>
+                                                  </label>
+                                              </div>
+                                              <div class="g-input--material  g-input--primary mt-5">
+                                                  <label for="material-input">
+                                                      <input type="text">
+                                                      <span class="placeholder">Dirección fiscal</span>
+                                                  </label>
+                                              </div>
+                                          </form>
+                                      </div>
+                                  </div>
+                                  
+                                  
+                              </div>
+                              <div class="modal-footer g-modal--footer">
+                                  <div>
+                                      <button class="g-button g-button--primary">Asignar</button>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
                     </div>
                   </div>
                   <div class="d-flex align-items-center">
