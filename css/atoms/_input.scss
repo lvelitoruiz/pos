@@ -1,13 +1,12 @@
 .g-input {
     outline: none;
     border: none;
+
     &--primary{
-        border: 1px solid $tertiary;
         border-radius: 4px;
         color: $four;
         width: 328px;
         height: 56px;
-        padding-left: 16px;
     }
     
     &--secondary{
@@ -29,10 +28,12 @@
         width: 32px;
         margin-left: 16px;
         margin-top: 28px;
+
         &::placeholder{
             color: $tertiary;
-            font-weight: normal;
+            background: white;
         }
+
     }
 
     &--check{
