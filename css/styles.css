@@ -93,12 +93,10 @@
   border: none;
 }
 .g-input--primary {
-  border: 1px solid #AAAAAA;
   border-radius: 4px;
   color: #222222;
   width: 328px;
   height: 56px;
-  padding-left: 16px;
 }
 .g-input--secondary {
   border: 2px solid;
@@ -122,7 +120,7 @@
 }
 .g-input--short::placeholder {
   color: #AAAAAA;
-  font-weight: normal;
+  background: white;
 }
 .g-input--check {
   width: 24px;
@@ -391,6 +389,12 @@
 .g-modal {
   min-width: 480px;
   border-radius: 8px;
+}
+.g-modal--short {
+  min-height: 373px;
+}
+.g-modal--bodie {
+  min-height: 150px;
 }
 .g-modal--medium {
   min-height: 559px;

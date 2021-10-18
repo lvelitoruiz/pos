@@ -2,6 +2,14 @@
     min-width: 480px;
     border-radius: 8px;
 
+    &--short{
+        min-height: 373px;
+    }
+
+    &--bodie{
+        min-height: 150px;
+    }
+
     &--medium{
         min-height: 559px;
     }
