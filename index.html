@@ -1,257 +1,283 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="./css/fonts.css">
-    <title>Hello, world!</title>
-  </head>
-  <body>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <h1 class="mt-5 mb-4">Lista de pantallas</h1>
-        </div>
-        <div class="col-md-12">
-          <ul>
-            <li>
-              <a href="" type="button" data-bs-toggle="modal" data-bs-target="#modalLogin">
-                Iniciar sesión
-              </a>
-              <!-- Modal -->
-              <div class="modal fade " id="modalLogin" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modalLoginLabel" aria-hidden="true">
-                <div class="modal-login modal-dialog modal-dialog-centered">
-                  <div class="modal-content">
-                    <div class="modal-body">
-                        <div class="modal-login--close">
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-login--img">
-                            <img src="./img/login.svg" alt="">
-                        </div>
-                        <div class="modal-login--title mb-4">
-                            <span>Iniciar sesión</span>
-                        </div>
-                        <form class="row justify-content-center" action="">
-                            <div class="col-md-8">
-                                <div class="modal-login--form">
-                                    <div class="g-input--material mb-3">
-                                      <label for="material-input">
-                                          <input type="email">
-                                          <span class="placeholder">Correo electrónico</span>
-                                      </label>
-                                    </div>
-                                    <div class="g-input--material mb-3">
-                                      <label for="material-input">
-                                          <input type="password">
-                                          <span class="placeholder">Contraseña</span>
-                                      </label>
-                                    </div>
-                                    <div class="mb-3 text-center">
-                                        <button class="g-button g-button--primary">Iniciar sesión</button>
-                                    </div>
-                                    <div class="mb-3 text-center">
-                                        <a href="" class="g-span g-span--secondary">Olvidé mi contraseña</a>
-                                    </div>
-                                </div>
-                                <div class="text-center">
-                                    <span>Soy nuevo</span>
-                                    <a href="" class="g-span g-span--secondary">Ir a registrarme</a>
-                                </div>
-                                <div class="text-center mt-4 mb-5">
-                                    <button class="g-button--line">Ver demo</button>
-                                </div>
-                            </div>
-                        </form>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/fonts.css">
+  <title>Hello, world!</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1 class="mt-5 mb-4">Lista de pantallas</h1>
+      </div>
+      <div class="col-md-12">
+        <ul>
+          <li>
+            <a href="" type="button" data-bs-toggle="modal" data-bs-target="#modalLogin">
+              Iniciar sesión
+            </a>
+            <!-- Modal -->
+            <div class="modal fade " id="modalLogin" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+              aria-labelledby="modalLoginLabel" aria-hidden="true">
+              <div class="modal-login modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <div class="modal-login--close">
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li>
-              <a href="" type="button" data-bs-toggle="modal" data-bs-target="#modalEmail">
-                Ingrese su email
-              </a>
-              <!-- Modal -->
-              <div class="modal fade" id="modalEmail" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modalLoginLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered">
-                  <div class="modal-content g-modal g-modal--medium">
-                    <div class="g-modal--head">
-                      <div class="icon--primary">
-                        <i class="icon-arrow-left" data-bs-dismiss="modal"></i>
-                      </div>
-                      <div class="modal-login--title flex-grow-1">
-                        <span>Ingrese su Email</span>
-                      </div>
+                    <div class="modal-login--img">
+                      <img src="./img/login.svg" alt="">
                     </div>
-                    <div class="g-modal g-modal--body col-md-10">
-                        <form action="" class="mt-5">
-                          <div class="g-input--material g-input--primary mb-3">
+                    <div class="modal-login--title mb-4">
+                      <span>Iniciar sesión</span>
+                    </div>
+                    <form class="row justify-content-center" action="">
+                      <div class="col-md-8">
+                        <div class="modal-login--form">
+                          <div class="g-input--material mb-3">
                             <label for="material-input">
-                                <input type="password">
-                                <span class="placeholder">Contraseña</span>
+                              <input type="email">
+                              <span class="placeholder">Correo electrónico</span>
                             </label>
                           </div>
-                        </form>
-                    </div>
-                    <div class="modal-footer g-modal--footer">
-                      <div>
-                        <span class="g-span--primary">Al continuar recibirás un SMS de confirmación.</span>
-                    </div>
-                    <div>
-                        <button class="g-button g-button--primary">Siguiente</button>
-                    </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li>
-              <a href="" type="button" data-bs-toggle="modal" data-bs-target="#modalCodigo">Ingrese el código de verificación</a>
-            </li>
-            <div class="modal fade" id="modalCodigo" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modalLoginLabel" aria-hidden="true">
-              <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content g-modal g-modal--medium">
-                  <div class="g-modal--head">
-                    <div class="icon--primary">
-                      <i class="icon-arrow-left" data-bs-dismiss="modal"></i>
-                    </div>
-                    <div class="modal-login--title flex-grow-1">
-                      <span>Ingrese el código de verificación</span>
-                    </div>
-                  </div>
-                  <div class="g-modal--body">
-                      <form action="" class="mt-4">
-                          <div class="mb-3 ">
-                              <div class="g-div g-div--colum">
-                                <span class="g-span--primary">Escribe los 4 dígitos enviados al:</span>
-                                <span class="g-span--secondary">+51992121047</span>
-                              </div>
-                              <div class="g-div">
-                                <input type="text" class="g-input g-input--short" placeholder="0">
-                                <input type="text" class="g-input g-input--short" placeholder="0">
-                                <input type="text" class="g-input g-input--short" placeholder="0">
-                                <input type="text" class="g-input g-input--short" placeholder="0">
-                              </div>
-                              
+                          <div class="g-input--material mb-3">
+                            <label for="material-input">
+                              <input type="password">
+                              <span class="placeholder">Contraseña</span>
+                            </label>
                           </div>
-                      </form>
-                  </div>
-                  <div class="modal-footer g-modal--footer">
-                  
-                      <button class="g-button g-button--primary">Verificar</button>
-                  
+                          <div class="mb-3 text-center">
+                            <button class="g-button g-button--primary">Iniciar sesión</button>
+                          </div>
+                          <div class="mb-3 text-center">
+                            <a href="" class="g-span g-span--secondary">Olvidé mi contraseña</a>
+                          </div>
+                        </div>
+                        <div class="text-center">
+                          <span>Soy nuevo</span>
+                          <a href="" class="g-span g-span--secondary">Ir a registrarme</a>
+                        </div>
+                        <div class="text-center mt-4 mb-5">
+                          <button class="g-button--line">Ver demo</button>
+                        </div>
+                      </div>
+                    </form>
                   </div>
                 </div>
               </div>
             </div>
-            <li>
-              <a href="" type="button" data-bs-toggle="modal" data-bs-target="#modalRegistro">Crear mi perfil</a>
-            </li>
-            <div class="modal fade" id="modalRegistro" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modalLoginLabel" aria-hidden="true">
+          </li>
+          <li>
+            <a href="" type="button" data-bs-toggle="modal" data-bs-target="#modalEmail">
+              Ingrese su email
+            </a>
+            <!-- Modal -->
+            <div class="modal fade" id="modalEmail" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+              aria-labelledby="modalLoginLabel" aria-hidden="true">
               <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content  g-modal--create">
+                <div class="modal-content g-modal">
                   <div class="g-modal--head">
-                    <div class="icon--primary">
+                    <div class="icon--arrow">
                       <i class="icon-arrow-left" data-bs-dismiss="modal"></i>
                     </div>
-                    <div class="modal-login--title flex-grow-1">
-                      <span>Crear mi perfil</span>
+                    <div class="modal-login--title">
+                      <span>Ingrese su Email</span>
                     </div>
                   </div>
-                  <div class="modal-body">
-                      <form action="" class="g-modal--body">
-                          <div class="mb-3">
-                              <div class="g-div g-div--colum">
-                                <div class="g-modal--img">
-                                  <img src="./img/img_create.svg" alt="">
-                                </div>
-                                 
-                                  <div class="g-input--material g-input--primary mb-3">
-                                    <label class="g-input--primary" for="material-input">
-                                      <input type="text">
-                                      <span class="placeholder">Nombre</span>
-                                  </label>
-                                  </div>
-                                  <div class="g-input--material g-input--primary mb-3">
-                                    <label for="material-input">
-                                        <input type="text">
-                                        <span class="placeholder">Apellido</span>
-                                    </label>
-                                  </div>
-                                  <div class="g-input--material g-input--primary mb-3">
-                                    <label for="material-input">
-                                        <input type="text">
-                                        <span class="placeholder">Nombre de la tienda</span>
-                                    </label>
-                                  </div>
-                                  <div class="g-input--material g-input--primary mb-3">
-                                    <label for="material-input">
-                                        <input type="text">
-                                        <span class="placeholder">Correo electrónico</span>
-                                    </label>
-                                  </div>
-                                  <div class="g-input--material  g-input--primary mb-3">
-                                    <label for="material-input">
-                                        <input type="password">
-                                        <span class="placeholder">Contraseña</span>
-                                    </label>
-                                  </div>
-                              </div>
-                          </div>
-                        </form>   
-                  </div>
-                  <div class="modal-footer g-modal--footer">
-                    <div class="g-div g-div--center">
-                      <div class="g-div--check">
-                        <input type="checkbox" name="privacidad" id="privacidad" class="g-input--check">
-                      </div>
-                      <div>
-                        <label for="privacidad">
-                          Acepto Términos y condiciones y las Políticas de Privacidad de Datos Personales.
+
+                  <form action="" class="row justify-content-center">
+
+                    <div class="col-md-8 mt-5">
+                      <div class="g-modal--body">
+                        <div class="g-input--material">
+                          <label for="material-input">
+                            <input type="text">
+                            <span class="placeholder">Correo electrónico</span>
                           </label>
+                        </div>
                       </div>
-                    </div>
-                    <div>
-                      <button class="g-button g-button--primary">Registrar</button>
-                    </div>
-                  </div>
+                      <div class="g-modal--footer">
+                        <div>
+                          <span class="g-span--primary">Al continuar recibirás un SMS de confirmación.</span>
+                        </div>
+                        <div class="mt-3">
+                          <button class="g-button g-button--primary">Siguiente</button>
+                        </div>
+                      </div>
+
+                  </form>
+
+
                 </div>
               </div>
             </div>
-            <li>
-              <a href="inicio.html">Inicio</a>
-            </li>
-            <li>
-              <a href="payment.html">Pago</a>
-            </li>
-            <li>
-              <a href="./cash-payment.html">Pago efectivo</a>
-            </li>
-            <li>
-              <a href="./split-payment.html">Dividir pago</a>
-            </li>
-          </ul>
+      </div>
+      </li>
+      <li>
+        <a href="" type="button" data-bs-toggle="modal" data-bs-target="#modalCodigo">Ingrese el código de
+          verificación</a>
+      </li>
+      <div class="modal fade" id="modalCodigo" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="modalLoginLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content g-modal g-modal--medium">
+            <div class="g-modal--head">
+              <div class="icon--arrow">
+                <i class="icon-arrow-left" data-bs-dismiss="modal"></i>
+              </div>
+              <div class="modal-login--title">
+                <span>Ingrese el código de verificación</span>
+              </div>
+            </div>
+            <form action="" class="row justify-content-center">
+              <div class="col-md-8 mt-5">
+                <div class="g-modal--body">
+                  <div class="g-div g-div--colum">
+                    <span class="g-span--primary">Escribe los 4 dígitos enviados al:</span>
+                    <span class="g-span--secondary">+51992121047</span>
+                  </div>
+                  <div class="g-div">
+                    <input type="text" class="g-input g-input--short" placeholder="0">
+                    <input type="text" class="g-input g-input--short" placeholder="0">
+                    <input type="text" class="g-input g-input--short" placeholder="0">
+                    <input type="text" class="g-input g-input--short" placeholder="0">
+                  </div>
+                </div>
+              </div>
+              <div class="g-modal--footer">
+                <div class="row justify-content-center">
+                  <div class="col-md-8">
+                    <button class="g-button g-button--primary">Verificar</button>
+                  </div>
+
+                </div>
+              </div>
+            </form>
+
+          </div>
         </div>
       </div>
+      <li>
+        <a href="" type="button" data-bs-toggle="modal" data-bs-target="#modalRegistro">Crear mi perfil</a>
+      </li>
+      <div class="modal fade" id="modalRegistro" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="modalLoginLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content  g-modal--create">
+            <div class="g-modal--head">
+              <div class="icon--arrow">
+                <i class="icon-arrow-left" data-bs-dismiss="modal"></i>
+              </div>
+              <div class="modal-login--title">
+                <span>Crear mi perfil</span>
+              </div>
+            </div>
+              <div class="row justify-content-center mt-4">
+                <div class="col-md-8">
+                  <div class="g-div g-div--colum">
+                    <div class="g-modal--img">
+                      <img src="./img/img_create.svg" alt="">
+                    </div>
+                    <form action="">
+                      <div class="g-input--material g-input--primary mb-3">
+                        <label class="g-input--primary" for="material-input">
+                          <input type="text">
+                          <span class="placeholder">Nombre</span>
+                        </label>
+                      </div>
+                      <div class="g-input--material g-input--primary mb-3">
+                        <label for="material-input">
+                          <input type="text">
+                          <span class="placeholder">Apellido</span>
+                        </label>
+                      </div>
+                      <div class="g-input--material g-input--primary mb-3">
+                        <label for="material-input">
+                          <input type="text">
+                          <span class="placeholder">Nombre de la tienda</span>
+                        </label>
+                      </div>
+                      <div class="g-input--material g-input--primary mb-3">
+                        <label for="material-input">
+                          <input type="text">
+                          <span class="placeholder">Correo electrónico</span>
+                        </label>
+                      </div>
+                      <div class="g-input--material  g-input--primary mb-3">
+                        <label for="material-input">
+                          <input type="password">
+                          <span class="placeholder">Contraseña</span>
+                        </label>
+                      </div>
+                  </div>
+                </div>
+              
+            </div>
+              <div class="g-modal--footer">
+                <div class="row justify-content-center">
+                  <div class="col-md-8">
+                    <div class="row justify-content-center">
+                      <div class="col-md-1">
+                        <input type="checkbox" name="privacidad" id="privacidad" class="g-input--check">
+                      </div>
+                      <div class="col-md-11 mb-3">
+                        <label for="privacidad" class="g-span--primary">
+                          Acepto Términos y condiciones y las Políticas de Privacidad de Datos Personales.
+                        </label>
+                      </div>
+                    </div>
+                  <div>
+                    <button class="g-button g-button--primary">Registrar</button>
+                  </div>
+                </div>
+              </div>
+              </div>
+            </form>
+
+          </div>
+        </div>
+      </div>
+      <li>
+        <a href="inicio.html">Inicio</a>
+      </li>
+      <li>
+        <a href="payment.html">Pago</a>
+      </li>
+      <li>
+        <a href="./cash-payment.html">Pago efectivo</a>
+      </li>
+      <li>
+        <a href="./split-payment.html">Dividir pago</a>
+      </li>
+      </ul>
     </div>
-    
-    <!-- Optional JavaScript; choose one of the two! -->
+  </div>
+  </div>
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="./js/main.js"></script>
+  <!-- Optional JavaScript; choose one of the two! -->
 
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="./js/main.js"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.min.js" integrity="sha384-PsUw7Xwds7x08Ew3exXhqzbhuEYmA2xnwc8BuD6SEr+UmEHlX8/MCltYEodzWA4u" crossorigin="anonymous"></script>
     -->
-  </body>
+</body>
+
 </html>

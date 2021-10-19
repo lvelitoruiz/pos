@@ -155,6 +155,12 @@
   font-size: 20px;
   margin-left: 24px;
 }
+.icon--arrow {
+  position: absolute;
+  left: 20px;
+  top: 28px;
+  color: #5393D0;
+}
 
 .g-input {
   outline: none;
@@ -645,7 +651,7 @@ body {
 }
 
 .g-modal {
-  min-width: 480px;
+  min-width: 100%;
   border-radius: 8px;
 }
 .g-modal--short {
@@ -673,8 +679,6 @@ body {
 }
 .g-modal--body {
   padding-top: 10px;
-  display: flex;
-  justify-content: center;
   min-height: 336px;
 }
 .g-modal--large {
@@ -686,9 +690,6 @@ body {
 }
 .g-modal--footer {
   min-height: 150px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   border: none;
 }
 .g-modal--img {

@@ -1,5 +1,5 @@
 .g-modal{
-    min-width: 480px;
+    min-width: 100%;
     border-radius: 8px;
 
     &--short{
@@ -32,8 +32,6 @@
 
     &--body{
         padding-top: 10px;
-        display: flex;
-        justify-content: center;
         min-height: 336px;
     }
 
@@ -47,9 +45,6 @@
 
     &--footer{
         min-height: 150px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
         border: none;
     }
 
