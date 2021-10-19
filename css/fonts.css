@@ -25,6 +25,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-check:before {
+  content: "\e91f";
+}
 .icon-trash:before {
   content: "\e900";
 }
