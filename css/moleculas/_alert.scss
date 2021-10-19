@@ -1,0 +1,15 @@
+.alert-danger {
+    border: 2px solid #fe3734;
+    color: #fe3734;
+    width: 435px;
+
+    span {
+        margin-left: 10px;
+    }
+
+    &--close {
+        position: absolute;
+        right: 20px;
+        color: #fe3734;
+    }
+}
