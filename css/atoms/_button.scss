@@ -23,7 +23,8 @@
         background-color: $secondary;
         color: white;
         height: 30px;
-        width: 160px;
+        padding: 0 50px;
+        width: 100%;
     }
 
     &--thirty {
@@ -41,7 +42,7 @@
         border: #1bd5ea 1px solid;
         font-size: 12px;
         height: 24px;
-        width: 70px;
+        width: 100%;
     }
 
     &--group {
