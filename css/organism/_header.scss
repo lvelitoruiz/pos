@@ -5,6 +5,11 @@
   z-index: 9;
   position: relative;
 
+  &--blue {
+    background: #5393d0;
+    box-shadow: none;
+  }
+
   h2 {
     font-size: 16px;
     font-weight: 500;
