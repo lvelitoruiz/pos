@@ -16,6 +16,26 @@
     font-size: 23px;
     height: 30px;
   }
+
+  .p-control {
+    user-select: none;
+    cursor: pointer;
+    color: $secondary;
+    border-radius: 60px;
+    font-size: 24px;
+    height: 35px;
+  }
+}
+
+#pNumber {
+  min-width: 20px;
+  font-size: 24px;
+  margin: 0 30px;
+
+  &:after {
+    height: 20px;
+    content: attr(data-content);
+  }
 }
 
 #number {

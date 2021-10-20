@@ -37,4 +37,49 @@ $items: 8, 10, 11, 12, 14, 18, 24, 30, 32, 40;
   &--500 {
     font-weight: 500;
   }
+
+  &--900 {
+    font-weight: 900;
+  }
+}
+ .pay {
+   margin: 5px;
+   position: relative;
+
+   i {
+     position: absolute;
+     color: $primary;
+     top: 23px;
+
+   }
+
+   
+ }
+
+
+.f-select {
+  border: none;
+  border-bottom: 1px solid $text;
+  margin: 20px 0 10px 40px;
+  padding-bottom: 5px;
+  min-width: 200px;
+  font-size: 12px;
+
+  option {
+    color: $text;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+}
+
+.f-p {
+  border-bottom: 1px solid $text;
+  margin: 12px 60px 20px;
+  min-width: 200px;
+  padding: 13px 0 10px 0;
+  margin-bottom: 25px;
+  font-size: 12px;
 }
