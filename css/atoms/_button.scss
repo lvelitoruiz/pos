@@ -26,11 +26,14 @@
         width: 160px;
     }
 
-    &--thirty{
+    &--thirty {
         background-color: white;
         color: $primary;
         height: 56px;
-        width: 328px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
     }
 
     &--new{

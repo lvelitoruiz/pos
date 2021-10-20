@@ -19,6 +19,22 @@
         font-size: 12px;
         font-weight: 600;
       }
+
+      .img {
+        border: solid 1px #eee;
+        width: 36px;
+        height: 36px;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 10px;
+
+        img {
+          object-fit: cover;
+          width: 100%;
+        }
+      }
     }
   }
 

@@ -1,0 +1,18 @@
+/* Error: expected "{".
+ *    ,
+ * 31 | >>>>>>> 1d83d52139ad64cba3ecd8bb108396b5451643f3
+ *    |                                                 ^
+ *    '
+ *   organism/_body.scss 31:49  @import
+ *   styles.scss 14:9           root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: 'Error: expected "{".\a    \2577 \a 31 \2502  >>>>>>> 1d83d52139ad64cba3ecd8bb108396b5451643f3\a    \2502                                                  ^\a    \2575 \a   organism/_body.scss 31:49  @import\a   styles.scss 14:9           root stylesheet';
+}
