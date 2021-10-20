@@ -16,7 +16,18 @@
     overflow: auto;
   }
 
+<<<<<<< HEAD
+  &--pay {
+    background: white;
+    border-radius: 4px;
+    border: solid 1px #ddd;
+    height: calc( 100vh - 146px);
+    margin: 50px 70px;
+    padding: 20px 80px;
+    overflow: auto;
+=======
   &--blue {
     background: #5393d0;
+>>>>>>> 1d83d52139ad64cba3ecd8bb108396b5451643f3
   }
 }
