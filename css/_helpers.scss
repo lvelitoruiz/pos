@@ -1,5 +1,5 @@
 // size
-$items: 8, 10, 11, 12, 14, 18, 24, 30, 32, 40;
+$items: 8, 10, 11, 12, 14, 16, 18, 24, 30, 32, 40;
 @each $item in $items {
   .h-fz--#{$item} {
     font-size: $item * 1px;
@@ -25,6 +25,14 @@ $items: 8, 10, 11, 12, 14, 18, 24, 30, 32, 40;
 
   &--text {
     color: $text;
+  }
+
+  &--tertiary {
+    color: $tertiary;
+  }
+
+  &--five {
+    color: $five;
   }
 }
 
