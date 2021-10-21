@@ -19,6 +19,17 @@
         }
     }
 
+    &--line-2 {
+        border: solid 2px $primary;
+        background: white;
+        height: 56px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        color: $primary;
+    }
+
     &--secundary {
         background-color: $secondary;
         color: white;
