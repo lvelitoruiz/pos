@@ -30,3 +30,24 @@
     background: #5393d0;
   }
 }
+
+.img-short {
+  border: solid 1px #eee;
+  width: 60px;
+  height: 60px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+
+  img {
+    object-fit: cover;
+    width: 100%;
+  }
+}
+
+.border-t {
+  border: 1px solid #dddddd;
+  min-height: 84px;
+}
