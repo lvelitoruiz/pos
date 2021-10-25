@@ -50,23 +50,24 @@ $items: 8, 10, 11, 12, 14, 16, 18, 24, 30, 32, 40;
     font-weight: 900;
   }
 }
- .pay {
-   margin: 5px;
-   position: relative;
 
-   i {
-     position: absolute;
-     color: $primary;
-     top: 23px;
-   } 
- }
+.pay {
+  margin: 5px;
+  position: relative;
+
+  i {
+    position: absolute;
+    color: $primary;
+    top: 23px;
+  } 
+}
 
 
 .f-select {
   border: none;
   border-bottom: 1px solid $text;
   margin: 20px 0 10px 55px;
-  padding-bottom: 5px;
+  padding-bottom: 10px;
   min-width: 200px;
   font-size: 12px;
 
@@ -80,6 +81,28 @@ $items: 8, 10, 11, 12, 14, 16, 18, 24, 30, 32, 40;
 
 }
 
+.f-selec {
+  border: none;
+  border-bottom: 1px solid $text;
+  color: $text;
+  margin: 15px 10px 10px 0;
+  width: 100%;
+  font-size: 12px;
+  position: relative;
+  padding-bottom: 10px;
+
+  &:focus {
+    outline: none;
+  }
+
+  i {
+    position: absolute;
+    color: $secondary;
+    right: 10px;
+    
+  }
+}
+
 .f-p {
   border-bottom: 1px solid $text;
   margin: 12px 60px 20px;
@@ -87,4 +110,8 @@ $items: 8, 10, 11, 12, 14, 16, 18, 24, 30, 32, 40;
   padding: 13px 0 10px 0;
   margin-bottom: 25px;
   font-size: 12px;
+}
+
+.end {
+  margin-top: 30%;
 }

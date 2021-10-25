@@ -89,3 +89,18 @@
     }
 }
 
+.g-select {
+    width: 100%;
+    border: none;
+    outline: none;
+    border: 2px solid $tertiary;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 3px;
+    color: $tertiary;
+    font-size: 14px;
+
+    
+}
