@@ -1,78 +1,7 @@
 .switch {
     display: inline-block;
     position: relative;
-    margin: 0 0 10px;
-    font-size: 12px;
-    line-height: 24px;
-
-    &--input {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 36px;
-        height: 10px;
-        opacity: 0;
-        z-index: 0;
-    }
-
-    &--label {
-        display: block;
-        padding: 0 0 0 44px;
-        cursor: pointer;
-
-        &::before {
-            content: '';
-            position: absolute;
-            top: 5px;
-            left: 5px;
-            width: 36px;
-            height: 14px;
-            background-color: red;
-            border-radius: 12px;
-            z-index: 1;
-            transition: background-color 0.28s cubic-bezier(.4, 0, .2, 1);
-        }
-
-        &::after {
-            content: '';
-            position: absolute;
-            top: 3px;
-            left: 0;
-            width: 20px;
-            height: 20px;
-            background-color: $secondary;
-            border-radius: 10px;
-            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14),0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
-            z-index: 2;
-            transition: all 0.28s cubic-bezier(.4, 0, .2, 1);
-            transition-property: right, background-color;
-        }
-    }
-
-    .switch--input:checked + .switch--label {
-        
-        &::before {
-            background-color: blue;
-        }
-
-        &::after {
-            right: 16px;
-            background-color: pink;
-        }
-    }
-    
-}
-
-$bg-disabled-color: rgba(0, 0, 0, .26);
-$bg-enabled-color: rgba(63, 81, 181, .5);
-$lever-disabled-color: #fff;
-$lever-enabled-color: #3f51b5;
-
-// Switch
-.switch {
-    display: inline-block;
-    position: relative;
-    margin: 0 0 10px;
+    margin: 0 50px 10px;
     font-size: 16px;
     line-height: 24px;
     
@@ -89,7 +18,7 @@ $lever-enabled-color: #3f51b5;
     // Unchecked
     &--label {
         display: block;
-        padding: 0 0 0 44px;
+        padding: 0 0 0 70px;
         cursor: pointer;
         
         &:before {
@@ -99,7 +28,7 @@ $lever-enabled-color: #3f51b5;
             left: 0;
             width: 36px;
             height: 14px;
-            background-color: $bg-disabled-color;
+            background-color: $tertiary;
             border-radius: 14px;
             z-index: 1;
             transition: background-color 0.28s cubic-bezier(.4, 0, .2, 1);
@@ -112,7 +41,7 @@ $lever-enabled-color: #3f51b5;
             left: 0;
             width: 20px;
             height: 20px;
-            background-color: $lever-disabled-color;
+            background-color: $tertiary;
             border-radius: 14px;
             box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14),0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
             z-index: 2;
@@ -124,12 +53,12 @@ $lever-enabled-color: #3f51b5;
     // Checked
     &--input:checked + &--label {
         &:before {
-            background-color: $bg-enabled-color;
+            background-color: $secondary;
         }
         
         &:after {
             left: 16px;
-            background-color: $lever-enabled-color;
+            background-color: $secondary;
         }
     }
     
