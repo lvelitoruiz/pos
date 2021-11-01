@@ -124,9 +124,8 @@
         Fechas 
     </a>
 
-    <div class="modal fade " id="modalCalen" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-        aria-labelledby="modalLoginLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
+    <div class="modal fade " id="modalCalen" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modalLoginLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content g-modal">
                 <div class="g-modal--head">
                     <div class="modal-login--close">
@@ -136,10 +135,10 @@
                         <small>Desde 01 mayo 2021 hasta 20 mayo 2021</small>
                     </div>
                 </div>
-                <form action="" class="row justify-content-center">
-                    <div class="col-md-8 mt-3">
-                        <div class="g-modal-body">
-                            <div class="row">
+                <div class="g-modal-body mt-4">
+                    <form action="" class="row justify-content-center">
+                        <div class="col-md-8 mt-3 ">
+                            <div class="row mb-4">
                                 <div class="col-md-4">
                                     <div class="list-chec">
                                         <input class="btn-radio" type="radio" name="selector" id="hoy">
@@ -152,9 +151,9 @@
                                         <div class="radiobutton"></div>
                                     </div>
                                     <div class="list-chec">
-                                    <input class="btn-radio" type="radio" name="selector" id="mes">
-                                    <label for="mes">Este mes</label>
-                                    <div class="radiobutton"></div>
+                                        <input class="btn-radio" type="radio" name="selector" id="mes">
+                                        <label for="mes">Este mes</label>
+                                        <div class="radiobutton"></div>
                                     </div>
                                 </div>
                                 <div class="col-md-4">
@@ -169,9 +168,9 @@
                                         <div class="radiobutton"></div>
                                     </div>
                                     <div class="list-chec">
-                                    <input class="btn-radio" type="radio" name="selector" id="diass">
-                                    <label for="diass">Últimos 30 días</label>
-                                    <div class="radiobutton"></div>
+                                        <input class="btn-radio" type="radio" name="selector" id="diass">
+                                        <label for="diass">Últimos 30 días</label>
+                                        <div class="radiobutton"></div>
                                     </div>
                                 </div>
                                 <div class="col-md-4">
@@ -187,13 +186,69 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="g-modal--footer">
-                            <div class="mt-3">
-                                <button class="g-button g-button--primary">Guardar</button>
+                            <div class="row mb-4">
+                                <span class="g-span--tertiary mb-3  border-bottom">Medio de pago</span>
+                                <div class="col-md-4">
+                                    <div class="list-chck">
+                                        <input class="btn-radio" type="radio" name="pago" id="efectivo">
+                                        <label for="efectivo">Efectivo</label>
+                                        <div class="lsquare"></div>
+                                    </div>
+                                    <div class="list-chck">
+                                        <input class="btn-radio" type="radio" name="pago" id="online">
+                                        <label for="online">Online</label>
+                                        <div class="lsquare"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="list-chck">
+                                        <input class="btn-radio" type="radio" name="pago" id="tarjeta">
+                                        <label for="tarjeta">Tarjeta</label>
+                                        <div class="lsquare"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="list-chck">
+                                        <input class="btn-radio" type="radio" name="pago" id="qr">
+                                        <label for="qr">QR</label>
+                                        <div class="lsquare"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mb-5">
+                                <span class="g-span--tertiary mb-3  border-bottom">Forma de entrega</span>
+                                <div class="col-md-4">
+                                    <div class="list-chck">
+                                        <input class="btn-radio" type="radio" name="envio" id="delivery">
+                                        <label for="delivery">Delivery</label>
+                                        <div class="lsquare"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="list-chck">
+                                        <input class="btn-radio" type="radio" name="envio" id="recojo">
+                                        <label for="recojo">Recojo</label>
+                                        <div class="lsquare"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="list-chck">
+                                        <input class="btn-radio" type="radio" name="envio" id="tienda">
+                                        <label for="tienda">En tienda</label>
+                                        <div class="lsquare"></div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                </form>
+                        <div class="g-modal--footer">
+                            <div class="row justify-content-center">
+                                <div class="col-md-6 mt-3">
+                                    <button class="g-button g-button--primary">Aplicar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>  
             </div>
         </div>
     </div>

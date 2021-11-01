@@ -590,6 +590,159 @@
   border-radius: 50%;
 }
 
+.g-modal {
+  width: 100%;
+  border-radius: 8px;
+}
+.g-modal--short {
+  min-height: 373px;
+}
+.g-modal--bodie {
+  display: flex;
+  position: relative;
+  margin: 20px 50px;
+  padding: 20px;
+  min-height: 150px;
+}
+.g-modal--medium {
+  min-height: 559px;
+}
+.g-modal--create {
+  min-height: 704px;
+}
+.g-modal--head {
+  min-height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #eeeeee;
+}
+.g-modal--body {
+  padding-top: 10px;
+  min-height: 336px;
+}
+.g-modal--large {
+  display: flex;
+  position: relative;
+  margin: 20px 50px;
+  padding: 20px;
+  min-height: 450px;
+}
+.g-modal--footer {
+  min-height: 150px;
+  border: none;
+}
+.g-modal--img {
+  min-width: 77px;
+  min-height: 64px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.list-check {
+  display: block;
+  position: relative;
+  float: left;
+  width: 100%;
+  height: 50px;
+}
+.list-check label {
+  position: relative;
+  font-weight: 600;
+  font-size: 14px;
+  margin-top: 15px;
+  margin-left: 40px;
+  z-index: 9;
+  cursor: pointer;
+  color: #222222;
+}
+
+.btn-radio {
+  position: absolute;
+  visibility: hidden;
+}
+
+.radiobutton {
+  display: block;
+  position: absolute;
+  border: 3px solid #AAAAAA;
+  border-radius: 100%;
+  height: 20px;
+  width: 20px;
+  top: 15px;
+  left: 5px;
+  z-index: 5;
+  transition: border 0.25s linear;
+  -webkit-transition: border 0.25s linear;
+}
+.radiobutton:hover {
+  border: 2px solid #1BD5EA;
+}
+.radiobutton::before {
+  display: block;
+  position: absolute;
+  content: "";
+  border-radius: 100%;
+  top: 3px;
+  left: 3px;
+  height: 8px;
+  width: 8px;
+  margin: auto;
+  transition: background 0.25s linear;
+  -webkit-transition: background 0.25s linear;
+}
+
+input[type=radio]:checked ~ .radiobutton {
+  border: 3px solid #1BD5EA;
+}
+
+input[type=radio]:checked ~ .radiobutton::before {
+  background: #1BD5EA;
+}
+
+input[type=radio]:checked ~ label {
+  color: #AAAAAA;
+}
+
+.list-chec {
+  display: block;
+  position: relative;
+  float: left;
+  width: 100%;
+  height: 50px;
+}
+.list-chec label {
+  position: relative;
+  font-weight: 400;
+  font-size: 12px;
+  margin-top: 15px;
+  margin-left: 40px;
+  z-index: 9;
+  cursor: pointer;
+  color: #222222;
+}
+
+.alert {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 9;
+}
+
+.alert-danger {
+  border: 2px solid #fe3734;
+  color: #fe3734;
+  width: 435px;
+}
+.alert-danger span {
+  margin-left: 10px;
+}
+.alert-danger--close {
+  position: absolute;
+  right: 20px;
+  color: #fe3734;
+}
+
 .search {
   align-items: center;
   background-color: #eee;
@@ -628,6 +781,71 @@
 }
 .searc i {
   color: #aaaaaa;
+}
+
+.list-chck {
+  display: block;
+  position: relative;
+  float: left;
+  width: 100%;
+  height: 50px;
+}
+.list-chck label {
+  position: relative;
+  font-weight: normal;
+  font-size: 12px;
+  margin-top: 15px;
+  margin-left: 40px;
+  z-index: 9;
+  cursor: pointer;
+  color: #222222;
+}
+
+.btn-radio {
+  position: absolute;
+  visibility: hidden;
+}
+
+.lsquare {
+  display: block;
+  position: absolute;
+  border: 2px solid #AAAAAA;
+  border-radius: 3px;
+  height: 20px;
+  width: 20px;
+  top: 15px;
+  left: 5px;
+  z-index: 5;
+  transition: border 0.25s linear;
+  -webkit-transition: border 0.25s linear;
+}
+.lsquare:hover {
+  border: 2px solid #1BD5EA;
+}
+.lsquare::before {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 3px;
+  left: 3px;
+  height: 8px;
+  width: 8px;
+  margin: auto;
+  transition: background 0.25s linear;
+  -webkit-transition: background 0.25s linear;
+}
+
+input[type=radio]:checked ~ .lsquare {
+  background-color: #1BD5EA;
+  border: none;
+}
+
+input[type=radio]:checked ~ .lsquare::before {
+  background: #1BD5EA;
+}
+
+input[type=radio]:checked ~ label {
+  color: #AAAAAA;
 }
 
 .product {
@@ -1203,159 +1421,6 @@ body {
 }
 .g-div--check {
   width: 50px;
-}
-
-.g-modal {
-  width: 100%;
-  border-radius: 8px;
-}
-.g-modal--short {
-  min-height: 373px;
-}
-.g-modal--bodie {
-  display: flex;
-  position: relative;
-  margin: 20px 50px;
-  padding: 20px;
-  min-height: 150px;
-}
-.g-modal--medium {
-  min-height: 559px;
-}
-.g-modal--create {
-  min-height: 704px;
-}
-.g-modal--head {
-  min-height: 72px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-bottom: 1px solid #eeeeee;
-}
-.g-modal--body {
-  padding-top: 10px;
-  min-height: 336px;
-}
-.g-modal--large {
-  display: flex;
-  position: relative;
-  margin: 20px 50px;
-  padding: 20px;
-  min-height: 450px;
-}
-.g-modal--footer {
-  min-height: 150px;
-  border: none;
-}
-.g-modal--img {
-  min-width: 77px;
-  min-height: 64px;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.list-check {
-  display: block;
-  position: relative;
-  float: left;
-  width: 100%;
-  height: 50px;
-}
-.list-check label {
-  position: relative;
-  font-weight: 600;
-  font-size: 14px;
-  margin-top: 15px;
-  margin-left: 40px;
-  z-index: 9;
-  cursor: pointer;
-  color: #222222;
-}
-
-.btn-radio {
-  position: absolute;
-  visibility: hidden;
-}
-
-.radiobutton {
-  display: block;
-  position: absolute;
-  border: 3px solid #AAAAAA;
-  border-radius: 100%;
-  height: 20px;
-  width: 20px;
-  top: 15px;
-  left: 5px;
-  z-index: 5;
-  transition: border 0.25s linear;
-  -webkit-transition: border 0.25s linear;
-}
-.radiobutton:hover {
-  border: 2px solid #1BD5EA;
-}
-.radiobutton::before {
-  display: block;
-  position: absolute;
-  content: "";
-  border-radius: 100%;
-  top: 3px;
-  left: 3px;
-  height: 8px;
-  width: 8px;
-  margin: auto;
-  transition: background 0.25s linear;
-  -webkit-transition: background 0.25s linear;
-}
-
-input[type=radio]:checked ~ .radiobutton {
-  border: 3px solid #1BD5EA;
-}
-
-input[type=radio]:checked ~ .radiobutton::before {
-  background: #1BD5EA;
-}
-
-input[type=radio]:checked ~ label {
-  color: #AAAAAA;
-}
-
-.list-chec {
-  display: block;
-  position: relative;
-  float: left;
-  width: 100%;
-  height: 50px;
-}
-.list-chec label {
-  position: relative;
-  font-weight: 400;
-  font-size: 12px;
-  margin-top: 15px;
-  margin-left: 40px;
-  z-index: 9;
-  cursor: pointer;
-  color: #222222;
-}
-
-.alert {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  z-index: 9;
-}
-
-.alert-danger {
-  border: 2px solid #fe3734;
-  color: #fe3734;
-  width: 435px;
-}
-.alert-danger span {
-  margin-left: 10px;
-}
-.alert-danger--close {
-  position: absolute;
-  right: 20px;
-  color: #fe3734;
 }
 
 /*# sourceMappingURL=styles.css.map */
