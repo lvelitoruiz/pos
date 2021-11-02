@@ -25,6 +25,18 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-filter:before {
+  content: "\e920";
+}
+.icon-edit:before {
+  content: "\e921";
+}
+.icon-categories:before {
+  content: "\e922";
+}
+.icon-calendar:before {
+  content: "\e923";
+}
 .icon-check:before {
   content: "\e91f";
 }
