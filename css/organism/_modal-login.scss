@@ -5,20 +5,30 @@
 
   &--close {
     position: absolute;
-    right: 12px;
-    top: 12px;
+    right: 25px;
+    top: 28px;
 
     button {
-      color: white;
+      color: $primary;
     }
   }
 
   &--img {
     background: #b8d2e3;
     padding-top: 20px;
+    position: relative;
     
     img {
       width: 100%;
+    }
+
+    div {
+      position: absolute;
+      left: 43%;
+      top: 63%;
+
+      
+
     }
   }
 

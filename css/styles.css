@@ -848,6 +848,19 @@ input[type=radio]:checked ~ label {
   color: #AAAAAA;
 }
 
+input[type=checkbox]:checked ~ .lsquare {
+  background-color: #1BD5EA;
+  border: none;
+}
+
+input[type=checkbox]:checked ~ .lsquare::before {
+  background: #1BD5EA;
+}
+
+input[type=checkbox]:checked ~ label {
+  color: #AAAAAA;
+}
+
 .product {
   display: flex;
   align-items: flex-start;
@@ -1091,18 +1104,24 @@ input[type=radio]:checked ~ label {
 }
 .modal-login--close {
   position: absolute;
-  right: 12px;
-  top: 12px;
+  right: 25px;
+  top: 28px;
 }
 .modal-login--close button {
-  color: white;
+  color: #5393D0;
 }
 .modal-login--img {
   background: #b8d2e3;
   padding-top: 20px;
+  position: relative;
 }
 .modal-login--img img {
   width: 100%;
+}
+.modal-login--img div {
+  position: absolute;
+  left: 43%;
+  top: 63%;
 }
 .modal-login--title {
   color: #34538A;

@@ -65,3 +65,17 @@ input[type=radio]:checked ~ .lsquare {
   input[type=radio]:checked ~ label{
     color: $tertiary;
   }
+
+
+  input[type=checkbox]:checked ~ .lsquare {
+    background-color:$secondary;
+    border: none;
+  }
+  
+  input[type=checkbox]:checked ~ .lsquare::before{
+    background: $secondary;
+  }
+  
+  input[type=checkbox]:checked ~ label{
+    color: $tertiary;
+  }
