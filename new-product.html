@@ -157,78 +157,121 @@
               </div>
             </div>
           </div>
-          <div>
-            <div class="d-flex align-items-center justify-content-between h-fz--12 mt-3 mb-3">
-              <div class="list-chec">
-                <input class="btn-radio" type="radio" name="selector" id="variado">
-                <label for="variado">Precio variado</label>
-                <div class="radiobutton"></div>
-              </div>
-              <div class="d-flex justify-content-center align-items-center">
-                <p class="m-0 g-span--tertiary">Agregar</p>
-                <i class="icon-add icon--primary ms-2" data-bs-toggle="modal" data-bs-target="#modalVariados"></i>
-                <div class="modal fade " id="modalVariados" data-bs-backdrop="static" data-bs-keyboard="false"
-                  tabindex="-1" aria-labelledby="modalLoginLabel" aria-hidden="true">
-                  <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content g-modal">
-                      <div class="g-modal--head">
-                        <div class="modal-login--close">
-                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="d-flex align-items-center justify-content-between h-fz--12 mt-3">
+                <div class="list-chec">
+                  <input class="btn-radio" type="radio" name="selector" id="variado">
+                  <label for="variado">Precio variado</label>
+                  <div class="radiobutton"></div>
+                </div>
+                <div class="d-flex justify-content-center align-items-center">
+                  <div class="d-flex justify-content-center align-items-center" data-bs-toggle="modal" data-bs-target="#modalVariados">
+                    <p class="m-0 g-span--tertiary">Agregar</p>
+                    <i class="icon-add icon--primary ms-2"></i>
+                  </div>
+                  <div class="modal fade " id="modalVariados" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modalLoginLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content g-modal">
+                        <div class="g-modal--head">
+                          <div class="modal-login--close">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-login--title">
+                            <span>Precios Variados</span>
+                          </div>
                         </div>
-                        <div class="modal-login--title">
-                          <span>Precios Variados</span>
-                        </div>
+                        <form action="" class="row justify-content-center">
+                          <div class="col-md-8 mt-5">
+                            <div class="g-modal-body">
+                              <p class="g-span--tertiary">Presentación (medida)</p>
+                              <div class="f-selec mb-4">
+                                <span>Selecciona una presentación</span>
+                                <i class="icon-arrow-right-2"></i>
+                              </div>
+                              <div class="g-input--material mb-3">
+                                <label for="material-input">
+                                  <input type="text">
+                                  <span class="placeholder">Precio</span>
+                                </label>
+                              </div>
+                              <div>
+                                <span class="g-span--tertiary">Vendido por</span>
+                              </div>
+                              <div class="row">
+                                <div class="col-md-12">
+                                  <div class="list-check">
+                                    <input class="btn-radio" type="radio" name="selector" id="unidad">
+                                    <label for="unidad">Unidad</label>
+                                    <div class="radiobutton"></div>
+                                  </div>
+                                </div>
+                                <div class="col-md-12">
+                                  <div class="list-check mb-3">
+                                    <input class="btn-radio" type="radio" name="selector" id="peso">
+                                    <label for="peso">Peso</label>
+                                    <div class="radiobutton"></div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="g-input--material mb-4">
+                                <label for="material-input">
+                                  <input type="text">
+                                  <span class="placeholder">Peso incremental</span>
+                                </label>
+                              </div>
+                              <div class="g-input--material mb-5">
+                                <label for="material-input">
+                                  <input type="text">
+                                  <span class="placeholder">Símbolo de medida</span>
+                                </label>
+                              </div>
+                            </div>
+                            <div class="g-modal--footer">
+                              <div class="mt-3">
+                                <button class="g-button g-button--primary">Guardar</button>
+                              </div>
+                            </div>
+                          </div>
+                        </form>
                       </div>
-                      <form action="" class="row justify-content-center">
-                        <div class="col-md-8 mt-5">
-                          <div class="g-modal-body">
-                            <p class="g-span--tertiary">Presentación (medida)</p>
-                            <div class="f-selec mb-4">
-                              <span>Selecciona una presentación</span>
-                              <i class="icon-arrow-right-2"></i>
-                            </div>
-                            <div class="g-input--material mb-3">
-                              <label for="material-input">
-                                <input type="text">
-                                <span class="placeholder">Precio</span>
-                              </label>
-                            </div>
-                            <div>
-                              <span class="g-span--tertiary">Vendido por</span>
-                            </div>
-                            <div class="row">
-                              <div class="list-check">
-                                <input class="btn-radio" type="radio" name="selector" id="unidad">
-                                <label for="unidad">Unidad</label>
-                                <div class="radiobutton"></div>
-                              </div>
-                              <div class="list-check mb-3">
-                                <input class="btn-radio" type="radio" name="selector" id="peso">
-                                <label for="peso">Peso</label>
-                                <div class="radiobutton"></div>
-                              </div>
-                            </div>
-                            <div class="g-input--material mb-4">
-                              <label for="material-input">
-                                <input type="text">
-                                <span class="placeholder">Peso incremental</span>
-                              </label>
-                            </div>
-                            <div class="g-input--material mb-5">
-                              <label for="material-input">
-                                <input type="text">
-                                <span class="placeholder">Símbolo de medida</span>
-                              </label>
-                            </div>
-                          </div>
-                          <div class="g-modal--footer">
-                            <div class="mt-3">
-                              <button class="g-button g-button--primary">Guardar</button>
-                            </div>
-                          </div>
-                      </form>
                     </div>
                   </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="d-flex align-items-center justify-content-between h-fz--12 mb-3">
+                <div class="d-flex justify-content-center align-items-center">
+                  <i class="icon-menu icon--secondary m-0"></i>
+                  <p class="m-0 ps-2 g-span--primary">Producto 1</p>
+                </div>
+                <div class="d-flex justify-content-center align-items-center">
+                  <p class="m-0 pe-4 g-span--primary">S/ 2.50</p>
+                  <i class="icon-edit icon--primary ms-2"></i>
+                  <i class="icon-trash icon--trash ms-2"></i>
+                </div>
+              </div>
+              <div class="d-flex align-items-center justify-content-between h-fz--12 mb-3">
+                <div class="d-flex justify-content-center align-items-center">
+                  <i class="icon-menu icon--secondary m-0"></i>
+                  <p class="m-0 ps-2 g-span--primary">Producto 2</p>
+                </div>
+                <div class="d-flex justify-content-center align-items-center">
+                  <p class="m-0 pe-4 g-span--primary">S/ 18.50</p>
+                  <i class="icon-edit icon--primary ms-2"></i>
+                  <i class="icon-trash icon--trash ms-2"></i>
+                </div>
+              </div>
+              <div class="d-flex align-items-center justify-content-between h-fz--12 mb-3">
+                <div class="d-flex justify-content-center align-items-center">
+                  <i class="icon-menu icon--secondary m-0"></i>
+                  <p class="m-0 ps-2 g-span--primary">Producto 3</p>
+                </div>
+                <div class="d-flex justify-content-center align-items-center">
+                  <p class="m-0 pe-4 g-span--primary">S/ 31.50</p>
+                  <i class="icon-edit icon--primary ms-2"></i>
+                  <i class="icon-trash icon--trash ms-2"></i>
                 </div>
               </div>
             </div>
@@ -270,7 +313,7 @@
                 </div>
               </div>
               <div class="">
-                <div class="d-flex justify-content-start mb-3">
+                <div class="d-flex justify-content-start mb-1">
                   <div class="square square--gray">
                     <i class="icon-check icon--white"></i>
                   </div>
@@ -308,7 +351,7 @@
                     <i class="icon-check icon--white"></i>
                   </div>
                 </div>
-                <div class="d-flex justify-content-start mb-3">
+                <div class="d-flex justify-content-start mb-1">
                   <div class="square square--lgreen">
                     <i class="icon-check icon--white"></i>
                   </div>
@@ -346,7 +389,7 @@
                     <i class="icon-check icon--white"></i>
                   </div>
                 </div>
-                <div class="d-flex justify-content-start mb-3">
+                <div class="d-flex justify-content-start mb-1">
                   <div class="square square--transparent">
                     <i class="icon-check icon--gray"></i>
                   </div>
@@ -371,28 +414,86 @@
             <div class="row">
               <div class="col-md-12 d-flex align-items-center justify-content-between h-fz--12 my-3">
                 <p class="m-0 g-span--tertiary">Configuración de variaciones</p>
-                <div class="d-flex justify-content-center align-items-center">
+                <div class="d-flex justify-content-center align-items-center" data-bs-toggle="modal" data-bs-target="#modalVariacion">
                   <p class="m-0 g-span--tertiary">Agregar</p>
-                  <i class="icon-add icon--primary ms-2" data-bs-toggle="modal" data-bs-target="#modalVariacion"></i>
+                  <i class="icon-add icon--primary ms-2"></i>
                 </div>
-
               </div>
-              <div class="col-md-12 d-flex align-items-center justify-content-between h-fz--12 mb-3">
+              <div class="col-md-12">
+                <div class="d-flex align-items-center justify-content-between h-fz--12 mb-3">
+                  <div class="d-flex justify-content-center align-items-center">
+                    <i class="icon-menu icon--secondary m-0"></i>
+                    <p class="m-0 ps-2 g-span--primary">Producto 1</p>
+                  </div>
+                  <div class="d-flex justify-content-center align-items-center">
+                    <p class="m-0 pe-4 g-span--primary">S/ 2.50</p>
+                    <i class="icon-edit icon--primary ms-2"></i>
+                    <i class="icon-trash icon--trash ms-2"></i>
+                  </div>
+                </div>
+                <div class="d-flex align-items-center justify-content-between h-fz--12 mb-3">
+                  <div class="d-flex justify-content-center align-items-center">
+                    <i class="icon-menu icon--secondary m-0"></i>
+                    <p class="m-0 ps-2 g-span--primary">Producto 2</p>
+                  </div>
+                  <div class="d-flex justify-content-center align-items-center">
+                    <p class="m-0 pe-4 g-span--primary">S/ 18.50</p>
+                    <i class="icon-edit icon--primary ms-2"></i>
+                    <i class="icon-trash icon--trash ms-2"></i>
+                  </div>
+                </div>
+                <div class="d-flex align-items-center justify-content-between h-fz--12 mb-3">
+                  <div class="d-flex justify-content-center align-items-center">
+                    <i class="icon-menu icon--secondary m-0"></i>
+                    <p class="m-0 ps-2 g-span--primary">Producto 3</p>
+                  </div>
+                  <div class="d-flex justify-content-center align-items-center">
+                    <p class="m-0 pe-4 g-span--primary">S/ 31.50</p>
+                    <i class="icon-edit icon--primary ms-2"></i>
+                    <i class="icon-trash icon--trash ms-2"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-12 d-flex align-items-center justify-content-between h-fz--12 my-3">
                 <p class="m-0 g-span--tertiary">Configuración de atributos</p>
                 <div class="d-flex justify-content-center align-items-center">
                   <p class="m-0 g-span--tertiary">Agregar</p>
                   <i class="icon-add icon--primary ms-2"></i>
                 </div>
               </div>
-              <div class="col-md-12 d-flex align-items-center justify-content-between h-fz--12 mb-5">
+              <div class="col-md-12 d-flex align-items-center justify-content-between h-fz--12 my-3">
                 <p class="m-0 g-span--tertiary">Configuración adicional</p>
                 <div class="d-flex justify-content-center align-items-center">
                   <p class="m-0 g-span--tertiary">Agregar</p>
                   <i class="icon-add icon--primary ms-2"></i>
                 </div>
               </div>
+              <div class="col-md-12">
+                <div class="d-flex align-items-center justify-content-between h-fz--12 mb-3">
+                  <div class="d-flex justify-content-center align-items-center">
+                    <i class="icon-menu icon--secondary m-0"></i>
+                    <p class="m-0 ps-2 g-span--primary">Producto 1</p>
+                  </div>
+                  <div class="d-flex justify-content-center align-items-center">
+                    <p class="m-0 pe-4 g-span--primary">S/ 2.50</p>
+                    <i class="icon-edit icon--primary ms-2"></i>
+                    <i class="icon-trash icon--trash ms-2"></i>
+                  </div>
+                </div>
+                <div class="d-flex align-items-center justify-content-between h-fz--12 mb-3">
+                  <div class="d-flex justify-content-center align-items-center">
+                    <i class="icon-menu icon--secondary m-0"></i>
+                    <p class="m-0 ps-2 g-span--primary">Producto 2</p>
+                  </div>
+                  <div class="d-flex justify-content-center align-items-center">
+                    <p class="m-0 pe-4 g-span--primary">S/ 18.50</p>
+                    <i class="icon-edit icon--primary ms-2"></i>
+                    <i class="icon-trash icon--trash ms-2"></i>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="row mb-3">
+            <div class="row mb-3 mt-5">
               <div class="col-md-6">
                 <button class="w-100 g-button g-button--line-2">Cancelar</button>
               </div>
@@ -430,20 +531,24 @@
                 <input class="btn-radio" type="checkbox" name="envio" id="variacion">
                 <label for="variacion">Variación requerida</label>
                 <div class="lsquare"></div>
-            </div>
+              </div>
               <div class="mb-2">
                 <span class="g-span--tertiary">Relación opciones y elección</span>
               </div>
               <div class="row">
-                <div class="list-check mb-3">
-                  <input class="btn-radio" type="radio" name="selector" id="uni">
-                  <label for="uni">1 elección</label>
-                  <div class="radiobutton"></div>
+                <div class="col-md-12">
+                  <div class="list-check">
+                    <input class="btn-radio" type="radio" name="selector" id="uni">
+                    <label for="uni">1 elección</label>
+                    <div class="radiobutton"></div>
+                  </div>
                 </div>
-                <div class="list-check mb-3">
-                  <input class="btn-radio" type="radio" name="selector" id="multiple">
-                  <label for="multiple">Multiple elección</label>
-                  <div class="radiobutton"></div>
+                <div class="col-md-12">
+                  <div class="list-check mb-3">
+                    <input class="btn-radio" type="radio" name="selector" id="multiple">
+                    <label for="multiple">Multiple elección</label>
+                    <div class="radiobutton"></div>
+                  </div>
                 </div>
               </div>
               <div class="">
@@ -459,52 +564,55 @@
                   <p class="m-0 g-span--tertiary">Opciones</p>
                   <div class="d-flex justify-content-center align-items-center">
                     <div>
-                      <p class="m-0 g-span--tertiary">Agregar</p>
-                      <i class="icon-add icon--primary ms-2" type="button" data-bs-toggle="modal" data-bs-target="#modalAdd"></i>
+                      <div class="d-flex justify-content-center align-items-center" type="button" data-bs-toggle="modal" data-bs-target="#modalAdd">
+                        <p class="m-0 g-span--tertiary">Agregar</p>
+                        <i class="icon-add icon--primary ms-2"></i>
+                      </div>
                       <!--modal-->
-                        <div class="modal fade " id="modalAdd" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modalLoginLabel" aria-hidden="true">
-                          <div class="modal-dialog modal-dialog-centered">
-                            <div class="modal-content g-modal">
-                              <div class="g-modal--head">
-                                <div class="modal-login--close">
-                                  <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
+                      <div class="modal fade" id="modalAdd" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modalLoginLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                          <div class="modal-content g-modal">
+                            <div class="g-modal--head">
+                              <div class="modal-login--close">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                  aria-label="Close"></button>
+                              </div>
+                              <div class="modal-login--title">
+                                <span>Opciones de variación</span>
+                              </div>
+                            </div>
+                            <form action="" class="row justify-content-center">
+                              <div class="col-md-8 mt-5">
+                                <div class="g-modal-body">
+                                  <p class="g-span--tertiary">Producto</p>
+                                  <div class="f-selec mb-5">
+                                    <span>Selecciona un producto</span>
+                                    <i class="icon-arrow-right-2"></i>
+                                  </div>
+                                  <p class="g-span--tertiary">Presentación</p>
+                                  <div class="f-selec mb-5">
+                                    <span>Selecciona una presentación</span>
+                                    <i class="icon-arrow-right-2"></i>
+                                  </div>
+                                  <div class="mb-5">
+                                    <div class="g-input--material">
+                                      <label for="material-input">
+                                        <input type="text">
+                                        <span class="placeholder">Precio</span>
+                                      </label>
+                                    </div>
+                                  </div>
                                 </div>
-                                <div class="modal-login--title">
-                                  <span>Opciones de variación</span>
+                                <div class="g-modal--footer">
+                                  <div class="mt-3">
+                                    <button class="g-button g-button--primary">Guardar</button>
+                                  </div>
                                 </div>
                               </div>
-                              <form action="" class="row justify-content-center">
-                                <div class="col-md-8 mt-5">
-                                  <div class="g-modal-body">
-                                    <p class="g-span--tertiary">Producto</p>
-                                    <div class="f-selec mb-5">
-                                      <span>Selecciona un producto</span>
-                                      <i class="icon-arrow-right-2"></i>
-                                    </div>
-                                    <p class="g-span--tertiary">Presentación</p>
-                                    <div class="f-selec mb-5">
-                                      <span>Selecciona una presentación</span>
-                                      <i class="icon-arrow-right-2"></i>
-                                    </div>
-                                    <div class="mb-5">
-                                      <div class="g-input--material">
-                                        <label for="material-input">
-                                          <input type="text">
-                                          <span class="placeholder">Precio</span>
-                                        </label>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div class="g-modal--footer">
-                                    <div class="mt-3">
-                                      <button class="g-button g-button--primary">Guardar</button>
-                                    </div>
-                                  </div>
-                              </form>
-                            </div>
+                            </form>
                           </div>
                         </div>
+                      </div>
                       <!-- fin modal-->
                     </div>
                   </div>
@@ -516,7 +624,7 @@
                   </div>
                   <div class="d-flex justify-content-center align-items-center">
                     <p class="m-0 pe-4 g-span--primary">S/ 2.50</p>
-                    <i class="icon-trash icon--primary ms-2"></i>
+                    <i class="icon-edit icon--primary ms-2"></i>
                     <i class="icon-trash icon--trash ms-2"></i>
                   </div>
                 </div>
@@ -527,7 +635,7 @@
                   </div>
                   <div class="d-flex justify-content-center align-items-center">
                     <p class="m-0 pe-4 g-span--primary">S/ 18.50</p>
-                    <i class="icon-trash icon--primary ms-2"></i>
+                    <i class="icon-edit icon--primary ms-2"></i>
                     <i class="icon-trash icon--trash ms-2"></i>
                   </div>
                 </div>
@@ -538,7 +646,7 @@
                   </div>
                   <div class="d-flex justify-content-center align-items-center">
                     <p class="m-0 pe-4 g-span--primary">S/ 31.50</p>
-                    <i class="icon-trash icon--primary ms-2"></i>
+                    <i class="icon-edit icon--primary ms-2"></i>
                     <i class="icon-trash icon--trash ms-2"></i>
                   </div>
                 </div>
