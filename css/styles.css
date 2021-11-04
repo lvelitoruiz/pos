@@ -31,6 +31,10 @@
   font-size: 20px;
 }
 
+.h-fz--22 {
+  font-size: 22px;
+}
+
 .h-fz--24 {
   font-size: 24px;
 }
@@ -134,7 +138,7 @@
 }
 
 .end {
-  margin-top: 30%;
+  margin-top: 10%;
 }
 
 .g-button {
@@ -147,7 +151,7 @@
 .g-button--primary {
   background-color: #5393D0;
   color: white;
-  height: 56px;
+  height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -159,7 +163,7 @@
 .g-button--line-2 {
   border: solid 2px #5393D0;
   background: white;
-  height: 56px;
+  height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -176,7 +180,7 @@
 .g-button--thirty {
   background-color: white;
   color: #5393D0;
-  height: 56px;
+  height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -638,6 +642,23 @@
   text-align: center;
   margin-bottom: 20px;
 }
+.g-modal--alert {
+  padding: 50px 0;
+}
+.g-modal--alert h3 {
+  font-size: 20px;
+  color: #34538A;
+}
+.g-modal--alert p {
+  font-size: 14px;
+}
+.g-modal--alert .icon-close {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  color: #34538A;
+  cursor: pointer;
+}
 
 .list-check {
   display: block;
@@ -1060,6 +1081,7 @@ input[type=checkbox]:checked ~ label {
   margin: 50px 70px;
   padding: 24px;
   overflow: auto;
+  position: relative;
 }
 .body-content--pay {
   background: white;
@@ -1069,9 +1091,20 @@ input[type=checkbox]:checked ~ label {
   margin: 50px 70px;
   padding: 20px 80px;
   overflow: auto;
+  position: relative;
 }
 .body-content--blue {
   background: #5393d0;
+}
+.body-content--footer {
+  left: 0;
+  position: sticky;
+  bottom: -24px;
+  right: 0;
+  background: white;
+  margin: 0;
+  padding: 20px 0 10px 0;
+  width: 100%;
 }
 
 .img-short {
@@ -1261,8 +1294,8 @@ input[type=checkbox]:checked ~ label {
 
 .calculator--header {
   background-color: #EEEEEE;
-  font-size: 24px;
-  padding: 20px;
+  font-size: 18px;
+  padding: 10px 20px;
   text-align: right;
 }
 .calculator--body__btn {
@@ -1271,7 +1304,7 @@ input[type=checkbox]:checked ~ label {
   border-left: solid 1px #EEEEEE;
   border-right: solid 1px #EEEEEE;
   display: flex;
-  height: 72px;
+  height: 50px;
   justify-content: center;
   text-align: center;
 }
@@ -1279,7 +1312,7 @@ input[type=checkbox]:checked ~ label {
   margin: 0;
   width: 100%;
   border-right: solid 1px #EEEEEE;
-  height: 72px;
+  height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1288,6 +1321,9 @@ input[type=checkbox]:checked ~ label {
 
 .completed {
   color: white;
+}
+.completed--img {
+  width: 150px;
 }
 .completed .title {
   font-size: 20px;

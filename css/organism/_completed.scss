@@ -1,6 +1,10 @@
 .completed {
   color: white;
 
+  &--img {
+    width: 150px;
+  }
+  
   .title {
     font-size: 20px;
     margin-bottom: 6px;
