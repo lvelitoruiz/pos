@@ -13,7 +13,6 @@ $items: 8, 10, 11, 12, 14, 16, 18, 20, 22, 24, 30, 32, 40;
   }
 }
 
-// color
 .h-color {
   &--primary {
     color: $primary;
@@ -22,7 +21,7 @@ $items: 8, 10, 11, 12, 14, 16, 18, 20, 22, 24, 30, 32, 40;
   &--secondary {
     color: $secondary;
   }
-
+  
   &--text {
     color: $text;
   }
