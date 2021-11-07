@@ -285,8 +285,8 @@
 }
 .icon--arrow {
   position: absolute;
-  left: 20px;
-  top: 28px;
+  left: 15px;
+  top: 18px;
   color: #5393D0;
 }
 
@@ -615,7 +615,7 @@
   min-height: 704px;
 }
 .g-modal--head {
-  min-height: 72px;
+  min-height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -623,7 +623,7 @@
 }
 .g-modal--body {
   padding-top: 10px;
-  min-height: 336px;
+  min-height: 260px;
 }
 .g-modal--large {
   display: flex;
@@ -669,7 +669,6 @@
 }
 .list-check label {
   position: relative;
-  font-weight: 600;
   font-size: 14px;
   margin-top: 15px;
   margin-left: 40px;
@@ -885,7 +884,7 @@ input[type=checkbox]:checked ~ label {
 
 .md-checkbox {
   position: relative;
-  margin: 1em 0;
+  margin: 10px 7px;
   text-align: left;
 }
 .md-checkbox.md-checkbox-inline {
@@ -898,8 +897,7 @@ input[type=checkbox]:checked ~ label {
   vertical-align: top;
   clear: both;
   padding-left: 1px;
-  font-size: 14px;
-  font-weight: 600;
+  font-size: 12px;
   color: #222222;
 }
 .md-checkbox label:not(:empty) {
@@ -1073,6 +1071,29 @@ input[type=checkbox]:checked ~ label {
 .body-content--white {
   background: white;
 }
+.body-content--fix {
+  background: white;
+  border-radius: 4px;
+  border: solid 1px #ddd;
+  height: calc( 100vh - 146px);
+  margin: 50px 70px;
+  padding-top: 24px;
+  position: relative;
+}
+.body-content--fix .body {
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: calc( 100vh - 252px);
+  padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+.body-content--fix .body-content--footer {
+  position: relative;
+  box-shadow: 0 -2px 10px 0 rgba(0, 0, 0, 0.06);
+  padding: 15px 0;
+  bottom: 0;
+}
 .body-content--detail {
   background: white;
   border-radius: 4px;
@@ -1105,6 +1126,7 @@ input[type=checkbox]:checked ~ label {
   margin: 0;
   padding: 20px 0 10px 0;
   width: 100%;
+  z-index: 9;
 }
 
 .img-short {
@@ -1203,8 +1225,8 @@ input[type=checkbox]:checked ~ label {
 }
 .modal-login--close {
   position: absolute;
-  right: 25px;
-  top: 28px;
+  right: 24px;
+  top: 13px;
 }
 .modal-login--close button {
   color: #5393D0;
@@ -1432,8 +1454,8 @@ input[type=checkbox]:checked ~ label {
 .share-item {
   background: white;
   color: #1BD5EA;
-  width: 76px;
-  height: 76px;
+  width: 70px;
+  height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1444,12 +1466,12 @@ input[type=checkbox]:checked ~ label {
   margin: 0 5px;
 }
 .share-item i {
-  font-size: 24px;
+  font-size: 20px;
   margin-bottom: 5px;
 }
 .share-item p {
   margin: 0;
-  font-size: 12px;
+  font-size: 10px;
   color: #222222;
 }
 
@@ -1542,6 +1564,29 @@ body {
 }
 .g-div--check {
   width: 50px;
+}
+
+.login--left {
+  background: url("./../img/login-bk.png");
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.login--left__text {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  right: 15px;
+  color: white;
+}
+.login--left .img {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 250px;
 }
 
 /*# sourceMappingURL=styles.css.map */
