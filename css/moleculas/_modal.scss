@@ -23,7 +23,7 @@
     }
 
     &--head{
-        min-height: 72px;
+        min-height: 50px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -32,7 +32,7 @@
 
     &--body{
         padding-top: 10px;
-        min-height: 336px;
+        min-height: 260px;
     }
 
     &--large{
@@ -53,5 +53,26 @@
         min-height: 64px;
         text-align: center;
         margin-bottom: 20px;
+    }
+
+    &--alert {
+        padding: 50px 0;
+
+        h3 {
+            font-size: 20px;
+            color: #34538A;
+        }
+
+        p {
+            font-size: 14px;
+        }
+
+        .icon-close {
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            color: #34538A;
+            cursor: pointer;
+        }
     }
 }

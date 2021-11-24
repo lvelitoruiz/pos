@@ -23,10 +23,12 @@
       <div class="col-md-12">
         <ul>
           <li>
+            <a href="login.html">Login</a>
+          </li>
+          <li>
             <a href="" type="button" data-bs-toggle="modal" data-bs-target="#modalLogin">
               Iniciar sesión
             </a>
-            <!-- Modal -->
             <div class="modal fade " id="modalLogin" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
               aria-labelledby="modalLoginLabel" aria-hidden="true">
               <div class="modal-login modal-dialog modal-dialog-centered">
@@ -107,7 +109,7 @@
                           </label>
                         </div>
                       </div>
-                      <div class="g-modal--footer">
+                      <div class="mb-3">
                         <div>
                           <span class="g-span--primary">Al continuar recibirás un SMS de confirmación.</span>
                         </div>
@@ -128,7 +130,7 @@
             <div class="modal fade" id="modalCodigo" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
               aria-labelledby="modalLoginLabel" aria-hidden="true">
               <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content g-modal g-modal--medium">
+                <div class="modal-content g-modal">
                   <div class="g-modal--head">
                     <div class="icon--arrow">
                       <i class="icon-arrow-left" data-bs-dismiss="modal"></i>
@@ -152,7 +154,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="g-modal--footer">
+                    <div class="mb-3">
                       <div class="row justify-content-center">
                         <div class="col-md-8">
                           <button class="g-button g-button--primary">Verificar</button>
@@ -279,6 +281,27 @@
           </li>
           <li>
             <a href="./report.html">Reporte</a>
+          </li>
+          <li>
+            <a href="" type="button" data-bs-toggle="modal" data-bs-target="#modalAlert">
+              Modal alert
+            </a>
+            <!-- Modal -->
+            <div class="modal fade" id="modalAlert" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+              aria-labelledby="modalLoginLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content g-modal g-modal--alert">
+                  <div class="row justify-content-center">
+                    <div class="col-md-8 text-center">
+                      <i class="icon-close" data-bs-dismiss="modal"></i>
+                      <img class="w-100 mb-4" src="./img/11104.jpg" alt="">
+                      <h3>Título de alerta</h3>
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </li>
         </ul>
       </div>

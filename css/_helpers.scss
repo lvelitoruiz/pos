@@ -1,5 +1,5 @@
 // size
-$items: 8, 10, 11, 12, 14, 16, 18, 20, 24, 30, 32, 40;
+$items: 8, 10, 11, 12, 14, 16, 18, 20, 22, 24, 30, 32, 40;
 @each $item in $items {
   .h-fz--#{$item} {
     font-size: $item * 1px;
@@ -13,7 +13,6 @@ $items: 8, 10, 11, 12, 14, 16, 18, 20, 24, 30, 32, 40;
   }
 }
 
-// color
 .h-color {
   &--primary {
     color: $primary;
@@ -22,7 +21,7 @@ $items: 8, 10, 11, 12, 14, 16, 18, 20, 24, 30, 32, 40;
   &--secondary {
     color: $secondary;
   }
-
+  
   &--text {
     color: $text;
   }
@@ -117,5 +116,5 @@ $items: 8, 10, 11, 12, 14, 16, 18, 20, 24, 30, 32, 40;
 }
 
 .end {
-  margin-top: 30%;
+  margin-top: 10%;
 }

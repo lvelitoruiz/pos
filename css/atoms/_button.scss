@@ -8,7 +8,7 @@
     &--primary {
         background-color: $primary;
         color: white;
-        height: 56px;
+        height: 50px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -18,11 +18,11 @@
             color: white;
         }
     }
-
+    
     &--line-2 {
         border: solid 2px $primary;
         background: white;
-        height: 56px;
+        height: 50px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -41,7 +41,7 @@
     &--thirty {
         background-color: white;
         color: $primary;
-        height: 56px;
+        height: 50px;
         display: flex;
         align-items: center;
         justify-content: center;
