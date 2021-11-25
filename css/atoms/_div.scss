@@ -19,3 +19,38 @@
         width: 50px;
     }
 }
+
+.dias {
+    font-size: 18px;
+    font-weight: 500;
+    width: 32px;
+    height: 32px;
+    background-color: ffffff;
+    color: $primary;
+    border: 1px solid $primary;
+    border-radius: 100%;
+    text-align: center;
+    margin-right: 15px;
+    padding: auto;
+
+    &:active {
+        background-color: $primary;
+        color: #ffffff;
+    }
+}
+
+.hour {
+    height: 56px;
+    border: 1px solid $tertiary;
+    border-radius: 3px;
+    margin-right: 20px;
+    padding: 10px;
+    margin-bottom: 15px;
+
+        input {
+            border: none;
+            outline: none;
+            font-size: 18px;
+            color: $tertiary;
+        }
+}
