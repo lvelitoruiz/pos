@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <title>POS</title>
+</head>
+
+<body>
+    <ul>
+        <li>
+            <a href="" type="button" data-bs-toggle="modal" data-bs-target="#modalPagos">
+                Iniciar sesión
+            </a>
+            <div class="modal fade" id="modalPagos" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="modalLoginLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content g-modal">
+                        <div class="g-modal--head">
+                            <div class="modal-login--close">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-login--title">
+                                <span>Comercio - pagos aceptados</span>
+                            </div>
+                        </div>
+                        <form action="" class="row justify-content-center">
+                            <div class="col-md-8 mt-5">
+                                <div class="g-modal--body">
+                                    <span class="g-span--tertiary">Selecciona los medios de pagos aceptados</span>
+                                    <div class="col-md-4">
+                                        <div class="md-checkbox">
+                                            <input id="i21" type="checkbox">
+                                            <label for="i21">Efectivo</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="md-checkbox">
+                                            <input id="i22" type="checkbox">
+                                            <label for="i22">POS</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="md-checkbox">
+                                            <input id="i23" type="checkbox">
+                                            <label for="i23">Online</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="md-checkbox">
+                                            <input id="i24" type="checkbox">
+                                            <label for="i24">QR</label>
+                                        </div>
+                                    </div>
+                                    <span class="g-span--tertiary">Datos del QR</span>
+                                    <div class="g-input--material mt-3">
+                                        <label for="material-input">
+                                            <input type="text">
+                                            <span class="placeholder">Nombre del titular</span>
+                                        </label>
+                                    </div>
+                                    <div class="g-input--material mt-3">
+                                        <label for="material-input">
+                                            <input type="text">
+                                            <span class="placeholder">Teléfono billetera QR</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="my-5">
+                                    <div class="mt-3">
+                                        <button class="g-button g-button--primary">Aceptar</button>
+                                    </div>
+                                </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <a href="" type="button" data-bs-toggle="modal" data-bs-target="#modalEtiquetas">
+                Iniciar sesión2
+            </a>
+            <div class="modal fade" id="modalEtiquetas" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="modalLoginLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content g-modal">
+                        <div class="g-modal--head">
+                            <div class="modal-login--close">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-login--title">
+                                <span>Comercio - etiquetas</span>
+                            </div>
+                        </div>
+                        <form action="" class="row justify-content-center">
+                            <div class="col-md-8 mt-5">
+                                <div class="g-modal--body">
+                                    <span class="g-span--tertiary">Etiqueta tu comercio</span>
+                                    <div class="col-md-4">
+                                        <div class="md-checkbox">
+                                            <input id="i21" type="checkbox">
+                                            <label for="i21">Efectivo</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="md-checkbox">
+                                            <input id="i22" type="checkbox">
+                                            <label for="i22">POS</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="md-checkbox">
+                                            <input id="i23" type="checkbox">
+                                            <label for="i23">Online</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="md-checkbox">
+                                            <input id="i24" type="checkbox">
+                                            <label for="i24">QR</label>
+                                        </div>
+                                    </div>
+                                    <span class="g-span--tertiary">Datos del QR</span>
+                                    <div class="g-input--material mt-3">
+                                        <label for="material-input">
+                                            <input type="text">
+                                            <span class="placeholder">Nombre del titular</span>
+                                        </label>
+                                    </div>
+                                    <div class="g-input--material mt-3">
+                                        <label for="material-input">
+                                            <input type="text">
+                                            <span class="placeholder">Teléfono billetera QR</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="my-5">
+                                    <div class="mt-3">
+                                        <button class="g-button g-button--primary">Aceptar</button>
+                                    </div>
+                                </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <a href="" type="button" data-bs-toggle="modal" data-bs-target="#modalTarifa">
+                Iniciar sesión3
+            </a>
+            <div class="modal fade" id="modalTarifa" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="modalLoginLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content g-modal">
+                        <div class="g-modal--head">
+                            <div class="modal-login--close">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-login--title my-4">
+                                <span>Comercio - tarifa delivery</span>
+                            </div>
+                        </div>
+                        <form action="" class="row justify-content-center">
+                            <div class="col-md-10 mt-3">
+                                <div class="g-modal--body">
+                                    <div class="g-input--material">
+                                        <label for="material-input">
+                                            <input type="text">
+                                            <span class="placeholder">Tipo de tarifa</span>
+                                        </label>
+                                    </div>
+                                    <div class="g-input--material mt-3">
+                                        <label for="material-input">
+                                            <input type="text">
+                                            <span class="placeholder">Tasa fija</span>
+                                        </label>
+                                    </div>
+                                    <div class="g-input--material mt-3">
+                                        <label for="material-input">
+                                            <input type="text">
+                                            <span class="placeholder">Valor de compra mínima</span>
+                                        </label>
+                                    </div>
+                                    <div class="g-input--material mt-3">
+                                        <label for="material-input">
+                                            <input type="text">
+                                            <span class="placeholder">Descuento del delivery</span>
+                                        </label>
+                                    </div>
+                                    <div class="g-input--material mt-3">
+                                        <label for="material-input">
+                                            <input type="text">
+                                            <span class="placeholder">Distancia mínima</span>
+                                        </label>
+                                    </div>
+                                    <div class="g-input--material mt-3">
+                                        <label for="material-input">
+                                            <input type="text">
+                                            <span class="placeholder">Tasa por kilometro</span>
+                                        </label>
+                                    </div>
+                                    <div class="col-md-8 mt-4">
+                                        <div class="md-checkbox">
+                                            <input id="envio" type="checkbox">
+                                            <label for="envio">Hago envío nacional</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-10 mx-auto">
+                                    <div class="my-5">
+                                        <div class="mt-3">
+                                            <button class="g-button g-button--primary">Aceptar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <a href="" type="button" data-bs-toggle="modal" data-bs-target="#modalInvitar">
+                Iniciar sesión4
+            </a>
+            <div class="modal fade" id="modalInvitar" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="modalLoginLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content g-modal">
+                        <div class="g-modal--head">
+                            <div class="modal-login--close">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-login--title my-4">
+                                <span>Invitar usuario</span>
+                            </div>
+                        </div>
+                        <form action="" class="row justify-content-center">
+                            <div class="col-md-10 mt-3">
+                                <div class="g-modal--body">
+                                    <div class="g-input--material">
+                                        <label for="material-input">
+                                            <input type="text">
+                                            <span class="placeholder">Nombre del invitado</span>
+                                        </label>
+                                    </div>
+                                    <div class="g-input--material mt-3">
+                                        <label for="material-input">
+                                            <input type="text">
+                                            <span class="placeholder">Apellido del invitado</span>
+                                        </label>
+                                    </div>
+                                    <div class="g-input--material mt-3">
+                                        <label for="material-input">
+                                            <input type="text">
+                                            <span class="placeholder">Correo del invitado</span>
+                                        </label>
+                                    </div>
+                                    <div class="g-input--material mt-3">
+                                        
+                                    </div>  
+                                </div>
+                                <div class="col-md-10 mx-auto">
+                                    <div class="my-5">
+                                        <div class="mt-3">
+                                            <button class="g-button g-button--primary">Aceptar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <a href="" type="button" data-bs-toggle="modal" data-bs-target="#modalContraseña">
+                Iniciar sesión5
+            </a>
+            <div class="modal fade" id="modalContraseña" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="modalLoginLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content g-modal">
+                        <div class="g-modal--head">
+                            <div class="modal-login--close">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-login--title my-4">
+                                <span>Reiniciar contraseña</span>
+                            </div>
+                        </div>
+                        <form action="" class="row justify-content-center">
+                            <div class="col-md-10 mt-5">
+                                <div class="g-modal--body">
+                                    <div class="g-input--material">
+                                        <label for="material-input">
+                                            <input type="text">
+                                            <span class="placeholder">Nueva contraseña</span>
+                                        </label>
+                                    </div>
+                                    <div class="g-input--material mt-5">
+                                        <label for="material-input">
+                                            <input type="text">
+                                            <span class="placeholder">Confirmar nueva contraseña</span>
+                                        </label>
+                                    </div>
+                                    <div class="mt-5">
+                                        <i class="icon-alert icon--five me-3"></i>
+                                        <span class="g-span--five">8 caracteres como mínimo</span>
+                                    </div>
+                                    <div class="mt-3">
+                                        <i class="icon-alert icon--five me-3"></i>
+                                        <span class="g-span--five">Al menos una letra</span>
+                                    </div>
+                                    <div class="mt-3">
+                                        <i class="icon-alert icon--five me-3"></i>
+                                        <span class="g-span--five">Al menos un número</span>
+                                    </div>  
+                                </div>
+                                <div class="col-md-10 mx-auto">
+                                    <div class="my-5">
+                                        <div class="mt-3">
+                                            <button class="g-button g-button--primary">Aceptar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <a href="" type="button" data-bs-toggle="modal" data-bs-target="#modalAsignar">
+                Iniciar sesión6
+            </a>
+            <div class="modal fade" id="modalAsignar" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="modalLoginLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content g-modal">
+                        <div class="g-modal--head">
+                            <div class="modal-login--close">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-login--title my-4">
+                                <span>Asignar tienda a usuario</span>
+                            </div>
+                        </div>
+                        <form action="" class="row justify-content-center">
+                            <div class="col-md-10 mt-3">
+                                <div class="g-modal--body">
+                                    <div class="g-input--material">
+                                        <label for="material-input">
+                                            <input type="text">
+                                            <span class="placeholder">Usuario</span>
+                                        </label>
+                                    </div>
+                                    <span class="g-span--tertiary">Tiene acceso a:</span>
+                                    <div class="col-md-8">
+                                        <div class="md-checkbox">
+                                            <input id="i31" type="checkbox">
+                                            <label for="i31" class="h-fw--900">Todas las tiendas</label>
+                                        </div>
+                                    </div>
+                                    <span class="g-span--tertiary">Tiene acceso solo a las tiendas:</span>
+                                    <div class="col-md-8">
+                                        <div class="md-checkbox">
+                                            <input id="i32" type="checkbox">
+                                            <label for="i32" class="h-fw--900">Primavera</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="md-checkbox">
+                                            <input id="i33" type="checkbox">
+                                            <label for="i33" class="h-fw--900">San Miguel</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="md-checkbox">
+                                            <input id="i34" type="checkbox">
+                                            <label for="i34" class="h-fw--900">Kallpa Burguer Arequipa</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-10 mx-auto">
+                                    <div class="my-5">
+                                        <div class="mt-3">
+                                            <button class="g-button g-button--primary">Aceptar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <a href="" type="button" data-bs-toggle="modal" data-bs-target="#modalCompra">
+                Iniciar sesión7
+            </a>
+            <div class="modal fade" id="modalCompra" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="modalLoginLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content g-modal">
+                        <div class="g-modal--head">
+                            <div class="modal-login--close">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-login--title my-4">
+                                <span>Compra - nuevo item</span>
+                            </div>
+                        </div>
+                        <form action="" class="row justify-content-center">
+                            <div class="col-md-10 mt-3">
+                                <div class="g-modal--body">
+                                    <div class="mb-4">
+                                        <div>
+                                          <span class="g-span--five">Producto</span>
+                                        </div>
+                                        <div class="f-selec">
+                                          <span>Selecciona un producto</span>
+                                          <i class="icon-arrow-right-2"></i>
+                                        </div>
+                                      </div>
+                                    <span class="g-span--five">Unidad de medida</span>
+                                    <div class="g-input--material mt-3">
+                                        <label for="material-input">
+                                            <input type="text">
+                                            <span class="placeholder">Valor de compra</span>
+                                        </label>
+                                    </div>
+                                    <div class="g-input--material mt-3">
+                                        <label for="material-input">
+                                            <input type="text">
+                                            <span class="placeholder">Cantidad</span>
+                                        </label>
+                                    </div>
+                                    <div class="g-input--material mt-3">
+                                        <label for="material-input">
+                                            <input type="text">
+                                            <span class="placeholder">Total</span>
+                                        </label>
+                                    </div> 
+                                </div>
+                                <div class="col-md-10 mx-auto">
+                                    <div class="my-5">
+                                        <div class="mt-3">
+                                            <button class="g-button g-button--primary">Aceptar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <a href="" type="button" data-bs-toggle="modal" data-bs-target="#modalEditar">
+                Iniciar sesión
+            </a>
+            <div class="modal fade" id="modalEditar" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="modalLoginLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content g-modal">
+                        <div class="g-modal--head">
+                            <div class="modal-login--close">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-login--title my-4">
+                                <span>Editar usuario</span>
+                            </div>
+                        </div>
+                        <form action="" class="row justify-content-center">
+                            <div class="col-md-10 mt-3">
+                                <div class="g-modal--body">
+                                    <div class="g-input--material">
+                                        <label for="material-input">
+                                            <input type="text">
+                                            <span class="placeholder">Nombres</span>
+                                        </label>
+                                    </div>
+                                    <div class="g-input--material mt-3">
+                                        <label for="material-input">
+                                            <input type="text">
+                                            <span class="placeholder">Apellidos</span>
+                                        </label>
+                                    </div>
+                                    <div class="g-input--material mt-3">
+                                        <label for="material-input">
+                                            <input type="text">
+                                            <span class="placeholder">Email</span>
+                                        </label>
+                                    </div>
+                                    <div class="g-input--material mt-3">
+                                        <label for="material-input">
+                                            <input type="text">
+                                            <span class="placeholder">Teléfono</span>
+                                        </label>
+                                    </div>
+                                    <div class="g-input--material mt-3">
+                                        <label for="material-input">
+                                            <input type="text">
+                                            <span class="placeholder">Rol de usuario</span>
+                                        </label>
+                                    </div>  
+                                </div>
+                                <div class="col-md-10 mx-auto">
+                                    <div class="my-5">
+                                        <div class="mt-3">
+                                            <button class="g-button g-button--primary">Aceptar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <a href="" type="button" data-bs-toggle="modal" data-bs-target="#modalEditar">
+                Iniciar sesión
+            </a>
+            <div class="modal fade" id="modalEditar" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="modalLoginLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content g-modal">
+                        <div class="g-modal--head">
+                            <div class="modal-login--close">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-login--title my-4">
+                                <span>Editar usuario</span>
+                            </div>
+                        </div>
+                        <form action="" class="row justify-content-center">
+                            <div class="col-md-10 mt-3">
+                                <div class="g-modal--body">
+                                    <div class="g-input--material">
+                                        <label for="material-input">
+                                            <input type="text">
+                                            <span class="placeholder">Nombres</span>
+                                        </label>
+                                    </div>
+                                    <div class="g-input--material mt-3">
+                                        <label for="material-input">
+                                            <input type="text">
+                                            <span class="placeholder">Apellidos</span>
+                                        </label>
+                                    </div>
+                                    <div class="g-input--material mt-3">
+                                        <label for="material-input">
+                                            <input type="text">
+                                            <span class="placeholder">Email</span>
+                                        </label>
+                                    </div>
+                                    <div class="g-input--material mt-3">
+                                        <label for="material-input">
+                                            <input type="text">
+                                            <span class="placeholder">Teléfono</span>
+                                        </label>
+                                    </div>
+                                    <div class="g-input--material mt-3">
+                                        <label for="material-input">
+                                            <input type="text">
+                                            <span class="placeholder">Rol de usuario</span>
+                                        </label>
+                                    </div>  
+                                </div>
+                                <div class="col-md-10 mx-auto">
+                                    <div class="my-5">
+                                        <div class="mt-3">
+                                            <button class="g-button g-button--primary">Aceptar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./js/main.js"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.min.js" integrity="sha384-PsUw7Xwds7x08Ew3exXhqzbhuEYmA2xnwc8BuD6SEr+UmEHlX8/MCltYEodzWA4u" crossorigin="anonymous"></script>
+    -->
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "350px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+</body>
+
+</html>
