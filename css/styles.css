@@ -141,6 +141,10 @@
   margin-top: 10%;
 }
 
+.g-pointer {
+  cursor: pointer;
+}
+
 .g-button {
   border-radius: 5px;
   font-size: 16px;
@@ -217,6 +221,15 @@
   color: white;
   background-color: #1BD5EA;
   border-color: #1BD5EA;
+}
+.g-button--check__circle {
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .g-button--line {
   border: solid 1px #1bd5ea;
@@ -620,6 +633,7 @@
   align-items: center;
   justify-content: center;
   border-bottom: 1px solid #eeeeee;
+  height: 50px;
 }
 .g-modal--body {
   padding-top: 10px;
@@ -1109,7 +1123,7 @@ input[type=checkbox]:checked ~ label {
 }
 
 .selec {
-  height: 50px;
+  height: 55px;
   position: relative;
 }
 .selec select {
@@ -1126,7 +1140,7 @@ input[type=checkbox]:checked ~ label {
   position: absolute;
   top: -8px;
   padding: 0 5px;
-  left: 15px;
+  left: 7px;
   font-size: 12px;
 }
 
@@ -1500,6 +1514,19 @@ input[type=checkbox]:checked ~ label {
   background: #f7f7f7;
 }
 
+.table {
+  width: 100%;
+}
+.table thead {
+  background-color: #34538A;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: normal;
+}
+.table tbody {
+  font-size: 10px;
+}
+
 .online-orders {
   height: calc(100vh - 130px);
   margin-top: 20px;
@@ -1541,6 +1568,30 @@ input[type=checkbox]:checked ~ label {
   color: #222222;
 }
 
+.item--template {
+  width: 100%;
+  margin: 5px;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 1px #aaa;
+  flex-direction: column;
+  color: #ced1d8;
+}
+.item--template i {
+  font-size: 80px;
+}
+.item--template p {
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+.item--template.active {
+  color: #1BD5EA;
+  border: solid 1px #1BD5EA;
+}
+
 .list-tab {
   margin: 0;
   padding: 0;
@@ -1571,9 +1622,23 @@ input[type=checkbox]:checked ~ label {
   font-size: 12px;
   padding: 20px;
   font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
 .file input {
   visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+}
+.file label {
+  cursor: pointer;
+  margin-bottom: 5px;
 }
 
 body {
@@ -1632,7 +1697,6 @@ body {
   color: #34538A;
   font-weight: 500;
   font-size: 12px;
-  margin-bottom: 5px;
 }
 
 .g-div {
@@ -1686,7 +1750,6 @@ body {
   border-radius: 3px;
   padding: 10px;
   margin-bottom: 15px;
-  width: 100%;
 }
 .hour input {
   border: none;
