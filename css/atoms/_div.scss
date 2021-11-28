@@ -64,3 +64,51 @@
         }
 }
 
+.d-compra {
+    display: flex;
+    flex-direction: column;
+    padding-right: 15px;
+    box-sizing: border-box;
+
+    span {
+        color: $five;
+        font-size: 12px;
+        font-weight: 500;
+        text-align: left;
+        height: 35px;
+        margin-top: 15px;
+        box-sizing: border-box;
+    }
+
+    i {
+        height: 50px;
+        padding-top: 13px;
+        font-size: 18px;
+    }
+}
+
+.sin {
+    height: 40px;
+    width: 100%;
+    border: 1px solid $tertiary;
+    margin-bottom: 10px;
+
+    select {
+        border: none;
+        color: $tertiary;
+        height: 100%;
+        font-size: 14px;
+        outline: none;
+        padding-left: 15px;
+    }
+    input {
+        width: 100%;
+        border: none;
+        outline: none;
+        height: 100%;
+        font-size: 14px;
+        color: $tertiary;
+        padding-top: 10px;
+        padding-left: 10px;
+    }
+}

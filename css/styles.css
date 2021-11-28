@@ -1696,6 +1696,52 @@ body {
   width: 100%;
 }
 
+.d-compra {
+  display: flex;
+  flex-direction: column;
+  padding-right: 15px;
+  box-sizing: border-box;
+}
+.d-compra span {
+  color: #34538A;
+  font-size: 12px;
+  font-weight: 500;
+  text-align: left;
+  height: 35px;
+  margin-top: 15px;
+  box-sizing: border-box;
+}
+.d-compra i {
+  height: 50px;
+  padding-top: 13px;
+  font-size: 18px;
+}
+
+.sin {
+  height: 40px;
+  width: 100%;
+  border: 1px solid #AAAAAA;
+  margin-bottom: 10px;
+}
+.sin select {
+  border: none;
+  color: #AAAAAA;
+  height: 100%;
+  font-size: 14px;
+  outline: none;
+  padding-left: 15px;
+}
+.sin input {
+  width: 100%;
+  border: none;
+  outline: none;
+  height: 100%;
+  font-size: 14px;
+  color: #AAAAAA;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
 .login--left {
   background: url("./../img/login-bk.png");
   height: 100%;
