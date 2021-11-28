@@ -41,3 +41,26 @@
     color: #aaaaaa;
   }
 }
+
+.date {
+  align-items: center;
+  background-color: #ffffff;
+  border: 1px solid $tertiary;
+  margin-right: 10px;
+  border-radius: 4px;
+  display: flex;
+  height: 30px;
+  padding: 3px 10px 3px 10px;
+  
+  input {visibility: hidden;
+    background: transparent;
+    border: 0;
+    font-size: 12px;
+    margin-right: 10px;
+    width: 100%;
+  }
+
+  i {
+    color: $primary;
+  }
+}
