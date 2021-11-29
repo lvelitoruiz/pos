@@ -145,6 +145,10 @@
   cursor: pointer;
 }
 
+.h-m-w--initial {
+  min-width: initial !important;
+}
+
 .g-button {
   border-radius: 5px;
   font-size: 16px;
@@ -821,18 +825,15 @@ input[type=radio]:checked ~ label {
   align-items: center;
   background-color: #ffffff;
   border: 1px solid #AAAAAA;
-  margin-right: 10px;
   border-radius: 4px;
   display: flex;
   height: 30px;
-  padding: 3px 10px 3px 10px;
+  padding: 3px 5px 3px 5px;
+  width: 100%;
 }
 .date input {
-  visibility: hidden;
-  background: transparent;
   border: 0;
   font-size: 12px;
-  margin-right: 10px;
   width: 100%;
 }
 .date i {
@@ -1083,18 +1084,15 @@ input[type=checkbox]:checked ~ label {
   align-items: center;
   background-color: #ffffff;
   border: 1px solid #AAAAAA;
-  margin-right: 10px;
   border-radius: 4px;
   display: flex;
   height: 30px;
-  padding: 3px 10px 3px 10px;
+  padding: 3px 5px 3px 5px;
+  width: 100%;
 }
 .date input {
-  visibility: hidden;
-  background: transparent;
   border: 0;
   font-size: 12px;
-  margin-right: 10px;
   width: 100%;
 }
 .date i {
@@ -1524,6 +1522,9 @@ input[type=checkbox]:checked ~ label {
   color: #ffffff;
   font-size: 12px;
   font-weight: normal;
+}
+.table thead tr {
+  vertical-align: middle;
 }
 .table tbody {
   font-size: 10px;
