@@ -1,6 +1,7 @@
 .table {
-    width: 100%;
-
+    width: 100%;    
+    border-radius: 6px;
+    border: solid 1px #eee;
 
     thead {
         background-color: $five;
@@ -11,5 +12,13 @@
 
     tbody {
         font-size: 10px;
+
+        tr {
+            vertical-align: middle;
+        }
     }
+}
+
+.table>:not(:first-child) {
+    border-top: 0;
 }
