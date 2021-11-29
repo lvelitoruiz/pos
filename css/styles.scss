@@ -19,6 +19,7 @@
 @import "./moleculas/product.scss";
 @import "./moleculas/search.scss";
 @import "./organism/header.scss";
+@import "./moleculas/select";
 @import "./organism/body.scss";
 @import "./organism/nav.scss";
 @import "./organism/modal-login.scss";
@@ -26,9 +27,11 @@
 @import "./organism/_calculator.scss";
 @import "./organism/_completed.scss";
 @import "./organism/_tab.scss";
+@import "./organism/table";
 @import "./organism/_online-orders.scss";
 @import "./organism/_share-item.scss";
 @import "./organism/_list-tab.scss";
+@import "./organism/file";
 @import "./template/home.scss";
 @import "./atoms/span.scss";
 @import "./atoms/div.scss";

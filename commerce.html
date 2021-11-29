@@ -1,0 +1,241 @@
+<!doctype html>
+<html class="h-100" lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <title>POS</title>
+  </head>
+  <body class="h-100 home" style="background-color: #f9fafc; color: #222;">
+    <div class="container-fluid p-0 h-100">
+      <div class="row m-0">
+        <div class="col-md-4 p-0">
+          <div class="header">
+            <div class="d-flex align-items-center h-100 p-2 justify-content-between">
+              <div class="d-flex align-items-center h-100">
+                <i class="icon-menu icon--five"></i>
+                <h2 class="ms-2">Comercio</h2>
+              </div>
+              <div class="d-flex align-items-center h-100">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-8 pe-0 ps-2">
+          <div class="header">
+            <div class="d-flex align-items-center h-100 p-2 justify-content-between">
+              <h2>Tiendas</h2>
+              <div class="ms-4 d-flex align-center">
+                <i class="icon-add icon--five me-3"></i>
+                <i class="icon-label icon--five me-3"></i>
+                <i class="icon-net icon--five me-3"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row m-0 body-content">
+        <div class="col-md-4 p-0">
+          <div class="h-100 home--body body-content--white">
+            <div class="p-3 tab--horizontal">
+              <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="commerce-tab" data-bs-toggle="tab" data-bs-target="#commerce" type="button" role="tab" aria-controls="commerce" aria-selected="false">
+                    <span class="w-100 text-start d-flex">
+                      <i class="h-fz--18 pe-2 icon-order h-color--secondary"></i>
+                      <span>Comercio</span>
+                    </span>
+                    <i class="icon-arrow-right-2 h-color--secondary"></i>
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active" id="shore-tab" data-bs-toggle="tab" data-bs-target="#shore" type="button" role="tab" aria-controls="shore" aria-selected="true">
+                    <span class="w-100 text-start d-flex">
+                      <i class="icon-store h-color--secondary h-fz--18 pe-2"></i>
+                      <span>Tiendas</span>
+                    </span>
+                    <i class="icon-arrow-right-2 h-color--secondary"></i>
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="coverage-tab" data-bs-toggle="tab" data-bs-target="#coverage" type="button" role="tab" aria-controls="coverage" aria-selected="false">
+                    <span class="w-100 text-start d-flex">
+                      <i class="icon-cobertura h-color--secondary h-fz--18 pe-2"></i>
+                      <span>Cobertura</span>
+                    </span>
+                    <i class="icon-arrow-right-2 h-color--secondary"></i>
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="user-tab" data-bs-toggle="tab" data-bs-target="#user" type="button" role="tab" aria-controls="user" aria-selected="false">
+                      <span class="w-100 text-start d-flex">
+                        <i class="icon-clients h-color--secondary h-fz--18 pe-2"></i>
+                        <span>Usuarios</span>
+                      </span>
+                      <i class="icon-arrow-right-2 h-color--secondary"></i>
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="distributed-tab" data-bs-toggle="tab" data-bs-target="#distributed" type="button" role="tab" aria-controls="distributed" aria-selected="false">
+                      <span class="w-100 text-start d-flex">
+                        <i class="icon-moto h-color--secondary h-fz--18 pe-2"></i>
+                        <span>Repartidores</span>
+                      </span>
+                      <i class="icon-arrow-right-2 h-color--secondary"></i>
+                    </button>
+                  </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-8 pe-0 ps-2">
+          <div class="body-content--detail">
+            <div class="tab-content" id="myTabContent">
+              <div class="tab-pane fade" id="commerce" role="tabpanel" aria-labelledby="commerce-tab">
+                <p>Producto</p>
+              </div>
+              <div class="tab-pane fade show active" id="shore" role="tabpanel" aria-labelledby="shore-tab">
+                <div class="row pt-3">
+                  <div class="col-md-12">
+                    <div class="d-flex align-center w-100 pb-3 h-border--bottom">
+                        <div class="searc ">
+                          <input type="text" placeholder="Buscar...">
+                          <i class="icon-search"></i>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+                <div class="row pt-3">
+                  <div class="col-md-12">
+                    <table class="table table-striped">
+                        <thead>
+                          <tr>
+                            <th scope="col">ID</th>
+                            <th scope="col">Título</th>
+                            <th scope="col">Télefono</th>
+                            <th scope="col">Dirección</th>
+                            <th scope="col">Cobertura</th>
+                            <th scope="col">Estado</th>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">322</th>
+                            <td>Los Antojitos Victoria</td>
+                            <td>7654321</td>
+                            <td>Av. de las Américas 501 La Victoria - Lima - Lima</td>
+                            <td>3 km</td>
+                            <td>Abierto</td>
+                            <td><i class="icon-edit icon--primary g-pointer ms-2"></i></td>
+                            <td><i class="icon-trash icon--trash g-pointer ms-2"></i></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">322</th>
+                            <td>Los Antojitos Victoria</td>
+                            <td>7654321</td>
+                            <td>Av. de las Américas 501 La Victoria - Lima - Lima</td>
+                            <td>3 km</td>
+                            <td>Abierto</td>
+                            <td><i class="icon-edit icon--primary g-pointer ms-2"></i></td>
+                            <td><i class="icon-trash icon--trash g-pointer ms-2"></i></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="user" role="tabpanel" aria-labelledby="user-tab">
+                <div class="row pt-3">
+                    <div class="col-md-12">
+                      <div class="d-flex align-center w-100 pb-3 h-border--bottom">
+                          <div class="searc ">
+                            <input type="text" placeholder="Buscar...">
+                            <i class="icon-search"></i>
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="row pt-3">
+                    <div class="col-md-12">
+                      <table class="table table-striped">
+                          <thead>
+                            <tr>
+                              <th scope="col">ID</th>
+                              <th scope="col">Nombre</th>
+                              <th scope="col">Email</th>
+                              <th scope="col">Teléfono</th>
+                              <th scope="col">Rol</th>
+                              <th scope="col">Tiendas</th>
+                              <th scope="col"></th>
+                              <th scope="col"></th>
+                              <th scope="col"></th>
+                              <th scope="col"></th>
+
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <th scope="row">322</th>
+                              <td>Oscar Bardales</td>
+                              <td>oscar.bardales@gmail.com</td>
+                              <td>98765432</td>
+                              <td>Admin</td>
+                              <td>Todas</td>
+                              <td><i class="icon-store icon--primary ms-2"></i></td>
+                              <td><i class="icon-store icon--primary ms-2"></i></td>
+                              <td><i class="icon-edit icon--primary ms-2"></i></td>
+                              <td><i class="icon-trash icon--trash ms-2"></i></td>
+                            </tr>
+                            <tr>
+                              <th scope="row">322</th>
+                              <td>Oscar Bardales</td>
+                              <td>oscar.bardales@gmail.com</td>
+                              <td>98765432</td>
+                              <td>Admin</td>
+                              <td>Todas</td>
+                              <td><i class="icon-store icon--primary ms-2"></i></td>
+                              <td><i class="icon-store icon--primary ms-2"></i></td>
+                              <td><i class="icon-edit icon--primary ms-2"></i></td>
+                              <td><i class="icon-trash icon--trash ms-2"></i></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./js/main.js"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.min.js" integrity="sha384-PsUw7Xwds7x08Ew3exXhqzbhuEYmA2xnwc8BuD6SEr+UmEHlX8/MCltYEodzWA4u" crossorigin="anonymous"></script>
+    -->
+  <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "350px";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+  </script>
+  </body>
+</html>

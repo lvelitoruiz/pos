@@ -1,0 +1,22 @@
+.selec {
+    height: 55px;
+    position: relative;
+
+    select{
+        height: 100%;
+        width: 100%;
+        color: $tertiary;
+        padding-left: 8px;
+        border: 1px solid $tertiary;
+        border-radius: 4px;
+        outline: none;
+    }
+    span {
+        background-color: #fff;
+        position: absolute;
+        top: -8px;
+        padding:0 5px;
+        left: 7px;
+        font-size: 12px;
+    }
+}

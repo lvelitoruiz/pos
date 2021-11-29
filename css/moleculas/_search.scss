@@ -41,3 +41,24 @@
     color: #aaaaaa;
   }
 }
+
+.date {
+  align-items: center;
+  background-color: #ffffff;
+  border: 1px solid $tertiary;
+  border-radius: 4px;
+  display: flex;
+  height: 30px;
+  padding: 3px 5px 3px 5px;
+  width: 100%;
+  
+  input {
+    border: 0;
+    font-size: 12px;
+    width: 100%;
+  }
+
+  i {
+    color: $primary;
+  }
+}

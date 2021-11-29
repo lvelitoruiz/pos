@@ -83,6 +83,16 @@
             background-color: $secondary;
             border-color: $secondary;
         }
+
+        &__circle {
+            width: 33px;
+            height: 33px;
+            border-radius: 50%;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
     }
 
     &--line {

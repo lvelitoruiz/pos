@@ -1,0 +1,31 @@
+.file {
+    margin: 12px 14px 0 0;
+    box-sizing: border-box;
+    border: 2px dashed;
+    border-radius: 3px;
+    text-align: center;
+    padding: auto;
+    cursor: pointer;
+    font-size: 12px;
+    padding: 20px ;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    input {
+        visibility: hidden;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+    }
+
+    label {
+        cursor: pointer;
+        margin-bottom: 5px;
+    }
+}

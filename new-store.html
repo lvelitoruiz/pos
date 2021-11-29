@@ -1,0 +1,286 @@
+<!doctype html>
+<html class="h-100" lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <title>POS</title>
+</head>
+
+<body class="h-100 home" style="background-color: #f9fafc; color: #222;">
+    <div class="container-fluid p-0 h-100">
+        <div class="row m-0">
+            <div class="col-md-4 p-0">
+                <div class="header">
+                    <div class="d-flex align-items-center h-100 p-2 justify-content-between">
+                        <div class="d-flex align-items-center h-100 ms-3">
+                            <i class="icon-arrow-left icon--five"></i>
+                            <h2 class="ms-2">Tiendas</h2>
+                        </div>
+                        <div class="d-flex align-items-center h-100">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8 pe-0 ps-2">
+                <div class="header">
+                    <div class="d-flex align-items-center h-100 p-2 justify-content-between mx-3">
+                        <h2>Nueva tienda</h2>
+                        <div class="ms-4 d-flex align-center">
+                            <i class="icon-label icon--five me-3"></i>
+                            <i class="icon-net icon--five me-3"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row m-0 body-content">
+            <div class="col-md-4 p-0">
+                <div class="h-100 home--body body-content--white">
+                    <div class="p-3 tab--horizontal">
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="home-tab" data-bs-toggle="tab" data-bs-target="#home"
+                                    type="button" role="tab" aria-controls="home" aria-selected="false">
+                                    <span class="w-100 text-start d-flex">
+                                        <i class="h-fz--18 pe-2 icon-order h-color--secondary"></i>
+                                        <span>Comercio</span>
+                                    </span>
+                                    <i class="icon-arrow-right-2 h-color--secondary"></i>
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="profile-tab" data-bs-toggle="tab"
+                                    data-bs-target="#profile" type="button" role="tab" aria-controls="profile"
+                                    aria-selected="true">
+                                    <span class="w-100 text-start d-flex">
+                                        <i class="icon-store h-color--secondary h-fz--18 pe-2"></i>
+                                        <span>Tiendas</span>
+                                    </span>
+                                    <i class="icon-arrow-right-2 h-color--secondary"></i>
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact"
+                                    type="button" role="tab" aria-controls="contact" aria-selected="false">
+                                    <span class="w-100 text-start d-flex">
+                                        <i class="icon-cobertura h-color--secondary h-fz--18 pe-2"></i>
+                                        <span>Cobertura</span>
+                                    </span>
+                                    <i class="icon-arrow-right-2 h-color--secondary"></i>
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact"
+                                    type="button" role="tab" aria-controls="contact" aria-selected="false">
+                                    <span class="w-100 text-start d-flex">
+                                        <i class="icon-clients h-color--secondary h-fz--18 pe-2"></i>
+                                        <span>Usuarios</span>
+                                    </span>
+                                    <i class="icon-arrow-right-2 h-color--secondary"></i>
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact"
+                                    type="button" role="tab" aria-controls="contact" aria-selected="false">
+                                    <span class="w-100 text-start d-flex">
+                                        <i class="icon-moto h-color--secondary h-fz--18 pe-2"></i>
+                                        <span>Repartidores</span>
+                                    </span>
+                                    <i class="icon-arrow-right-2 h-color--secondary"></i>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8 pe-0 ps-2">
+                <div class="tab-pane fade show active" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                    <div class="body-content--fix">
+                        <div class="body">
+                            <div class="tab-content">
+                                <div>
+                                    <div class="d-flex pt-3">
+                                        <div class="g-input--material g-input--primary me-4">
+                                            <label for="material-input">
+                                                <input type="text">
+                                                <span class="placeholder">Título de tu tienda</span>
+                                            </label>
+                                        </div>
+                                        <div class="g-input--material g-input--primary mb-3">
+                                            <label for="material-input">
+                                                <input type="text">
+                                                <span class="placeholder">Teléfono de tu tienda</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 d-flex pt-3">
+                                        <div class="g-input--material g-input--primary me-4">
+                                            <label for="material-input">
+                                                <input type="text">
+                                                <span class="placeholder">Dirección de tu tienda</span>
+                                            </label>
+                                        </div>
+                                        <div class="g-input--material g-input--primary mb-3">
+                                            <label for="material-input">
+                                                <input type="text">
+                                                <span class="placeholder">Número</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 d-flex mt-3">
+                                        <div class="col-md-4 selec">
+                                            <select name="" id="" class="h-20">
+                                                <option value="">Selecciona la ciudad</option>
+                                                <option value="">Lima</option>
+                                            </select>
+                                            <span>Ciudad</span>
+                                        </div>
+                                        <div class="col-md-4 selec ps-3">
+                                            <select name="" id="" class="h-20">
+                                                <option value="">Selecciona la provincia</option>
+                                                <option value="">Lima</option>
+                                            </select>
+                                            <span>Provincia</span>
+                                        </div>
+                                        <div class="col-md-4 selec ps-3">
+                                            <select name="" id="" class="h-20">
+                                                <option value="">Selecciona el distrito</option>
+                                                <option value="">Lima</option>
+                                            </select>
+                                            <span>Distrito</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 mt-4">
+                                        <div class="g-input--material g-input--primary mb-3">
+                                            <label for="material-input">
+                                                <input type="text">
+                                                <span class="placeholder">Referencia</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between mt-4">
+                                        <span class="h-color--five h-fz--12 h-fw--500">Configuración de horario</span>
+                                        <div class="g-pointer d-flex align-items-center">
+                                            <span class="h-color--primary h-fz--14 -fw--500 me-2">Horario fijo</span>
+                                            <i class="icon-calendar h-fz--18 h-color--primary h-fw--900"></i>
+                                        </div>
+                                    </div>
+                                    <div class="week mt-4">
+                                        <span></span> 
+                                        <span class="dias">L</span> 
+                                        <span class="dias">M</span> 
+                                        <span class="dias">M</span> 
+                                        <span class="dias">J</span> 
+                                        <span class="dias">V</span> 
+                                        <span class="dias">S</span> 
+                                        <span class="dias">D</span> 
+                                    </div>
+                                    <div class="week mt-3">
+                                        <span>de</span>
+                                        <div class=" hour">
+                                            <input type="time">
+                                        </div>
+                                        <div class=" hour">
+                                            <input type="time">
+                                        </div>
+                                        <div class=" hour">
+                                            <input type="time">
+                                        </div>
+                                        <div class=" hour">
+                                            <input type="time">
+                                        </div>
+                                        <div class=" hour">
+                                            <input type="time">
+                                        </div>
+                                        <div class=" hour">
+                                            <input type="time">
+                                        </div>
+                                        <div class=" hour">
+                                            <input type="time">
+                                        </div>
+                                    </div>
+                                    <div class="week mt-3">
+                                        <span>hasta</span>
+                                        <div class=" hour">
+                                            <input type="time">
+                                        </div>
+                                        <div class=" hour">
+                                            <input type="time">
+                                        </div>
+                                        <div class=" hour">
+                                            <input type="time">
+                                        </div>
+                                        <div class=" hour">
+                                            <input type="time">
+                                        </div>
+                                        <div class=" hour">
+                                            <input type="time">
+                                        </div>
+                                        <div class=" hour">
+                                            <input type="time">
+                                        </div>
+                                        <div class=" hour">
+                                            <input type="time">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="body-content--footer">
+                            <div class="row m-0">
+                                <div class="col-md-6">
+                                    <button class="w-100 g-button g-button--line-2">Cancelar</button>
+                                </div>
+                                <div class="col-md-6">
+                                    <button class="w-100 g-button g-button--primary">Guardar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="fade" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <div class="body-content--detail">
+                        <p>Producto</p>
+                    </div>
+                </div>
+                <div class="body-content--detail fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                    <p>Presentación</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./js/main.js"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.min.js" integrity="sha384-PsUw7Xwds7x08Ew3exXhqzbhuEYmA2xnwc8BuD6SEr+UmEHlX8/MCltYEodzWA4u" crossorigin="anonymous"></script>
+    -->
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "350px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+</body>
+
+</html>

@@ -23,3 +23,32 @@
     color: $text;
   }
 }
+
+.item {
+  &--template {
+    width: 100%;
+    margin: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 1px #aaa;
+    flex-direction: column;
+    color: #ced1d8;
+
+    i {
+      font-size: 80px;
+    }
+
+    p {
+      font-size: 12px;
+      margin-bottom: 5px;
+    }
+
+    &.active {
+      color: $secondary;
+      border: solid 1px $secondary;
+    }
+  }
+}
