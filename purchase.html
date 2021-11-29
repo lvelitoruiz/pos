@@ -33,10 +33,10 @@
                 <div class="header">
                     <div class="d-flex align-items-center h-100 p-2 justify-content-between">
                         <h2>Compras</h2>
-                        <div>
-                            <i class="icon-add icon--five"></i>
-                            <i class="icon-label icon--five"></i>
-                            <i class="icon-net icon--five"></i>
+                        <div class="ms-4 d-flex align-center">
+                            <i class="icon-add icon--five me-3"></i>
+                            <i class="icon-label icon--five me-3"></i>
+                            <i class="icon-net icon--five me-3"></i>
                         </div>
                     </div>
                 </div>
@@ -51,7 +51,7 @@
                                 <button class="nav-link" id="stock-tab" data-bs-toggle="tab" data-bs-target="#stock"
                                     type="button" role="tab" aria-controls="stock" aria-selected="false">
                                     <span class="w-100 text-start d-flex">
-                                        <i class="h-fz--18 pe-2 icon-transactions h-color--secondary"></i>
+                                        <i class="h-fz--18 pe-2 icon-report h-color--secondary"></i>
                                         <span>Stock</span>
                                     </span>
                                     <i class="icon-arrow-right-2 h-color--secondary"></i>
@@ -61,7 +61,7 @@
                                 <button class="nav-link" id="kardex-tab" data-bs-toggle="tab" data-bs-target="#kardex"
                                     type="button" role="tab" aria-controls="kardex" aria-selected="false">
                                     <span class="w-100 text-start d-flex">
-                                        <i class="icon-categories h-color--secondary h-fz--18 pe-2"></i>
+                                        <i class="icon-store h-color--secondary h-fz--18 pe-2"></i>
                                         <span>Kardex</span>
                                     </span>
                                     <i class="icon-arrow-right-2 h-color--secondary"></i>
@@ -72,7 +72,7 @@
                                     data-bs-target="#compra" type="button" role="tab" aria-controls="compra"
                                     aria-selected="true">
                                     <span class="w-100 text-start d-flex">
-                                        <i class="icon-label h-color--secondary h-fz--18 pe-2"></i>
+                                        <i class="icon-moto h-color--secondary h-fz--18 pe-2"></i>
                                         <span>Compras</span>
                                     </span>
                                     <i class="icon-arrow-right-2 h-color--secondary"></i>
@@ -82,7 +82,7 @@
                                 <button class="nav-link" id="provee-tab" data-bs-toggle="tab" data-bs-target="#provee"
                                     type="button" role="tab" aria-controls="provee" aria-selected="false">
                                     <span class="w-100 text-start d-flex">
-                                        <i class="icon-label h-color--secondary h-fz--18 pe-2"></i>
+                                        <i class="icon-products h-color--secondary h-fz--18 pe-2"></i>
                                         <span>Proveedores</span>
                                     </span>
                                     <i class="icon-arrow-right-2 h-color--secondary"></i>
@@ -103,22 +103,26 @@
                         </div>
                         <div class="tab-pane fade show active" id="compra" role="tabpanel" aria-labelledby="compra-tab">
                             <div class="row pt-3">
-                                <div class="d-flex h-border--bottom">
-                                    <div class="date col-md-2">
+                                <div class="col-md-2">
+                                    <div class="date">
+                                        <input type="text" placeholder="Desde:">
+                                        <i class="icon-calendar"></i>
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="date">
                                         <input type="text" placeholder="Hasta:">
                                         <i class="icon-calendar"></i>
                                     </div>
-                                    <div class="date col-md-2">
-                                        <input type="text" placeholder="Hasta:">
-                                        <i class="icon-calendar"></i>
-                                    </div>
-                                    <div class="col-md-7 d-flex align-items-center pb-3">
-                                        <div class="searc ">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class=" d-flex align-items-center pb-3">
+                                        <div class="search w-100 h-m-w--initial">
                                             <input type="text" placeholder="Buscar...">
                                             <i class="icon-search"></i>
                                         </div>
+                                        <i class="icon-pdf icon--primary me-1"></i>
                                     </div>
-                                    <i class="icon-pdf icon--primary me-2"></i>
                                 </div>
                             </div>
                             <div class="row pt-3">
@@ -150,8 +154,8 @@
                                                 <td>S/ 234.34</td>
                                                 <td>S/ 234.34</td>
                                                 <td>17-11-2021</td>
-                                                <td><i class="icon-edit icon--primary ms-2"></i></td>
-                                                <td><i class="icon-trash icon--trash ms-2"></i></td>
+                                                <td><i class="icon-edit icon--primary ms-2 g-pointer"></i></td>
+                                                <td><i class="icon-trash icon--trash ms-2 g-pointer"></i></td>
                                             </tr>
                                             <tr>
                                                 <th scope="row">322</th>
@@ -163,8 +167,8 @@
                                                 <td>S/ 234.34</td>
                                                 <td>S/ 234.34</td>
                                                 <td>17-11-2021</td>
-                                                <td><i class="icon-edit icon--primary ms-2"></i></td>
-                                                <td><i class="icon-trash icon--trash ms-2"></i></td>
+                                                <td><i class="icon-edit icon--primary ms-2 g-pointer"></i></td>
+                                                <td><i class="icon-trash icon--trash ms-2 g-pointer"></i></td>
                                             </tr>
                                             <tr>
                                                 <th scope="row">322</th>
@@ -176,8 +180,8 @@
                                                 <td>S/ 234.34</td>
                                                 <td>S/ 234.34</td>
                                                 <td>17-11-2021</td>
-                                                <td><i class="icon-edit icon--primary ms-2"></i></td>
-                                                <td><i class="icon-trash icon--trash ms-2"></i></td>
+                                                <td><i class="icon-edit icon--primary ms-2 g-pointer"></i></td>
+                                                <td><i class="icon-trash icon--trash ms-2 g-pointer"></i></td>
                                             </tr>
                                             <tr>
                                                 <th scope="row">322</th>
@@ -189,8 +193,8 @@
                                                 <td>S/ 234.34</td>
                                                 <td>S/ 234.34</td>
                                                 <td>17-11-2021</td>
-                                                <td><i class="icon-edit icon--primary ms-2"></i></td>
-                                                <td><i class="icon-trash icon--trash ms-2"></i></td>
+                                                <td><i class="icon-edit icon--primary ms-2 g-pointer"></i></td>
+                                                <td><i class="icon-trash icon--trash ms-2 g-pointer"></i></td>
                                             </tr>
                                             <tr>
                                                 <th scope="row">322</th>
@@ -202,8 +206,8 @@
                                                 <td>S/ 234.34</td>
                                                 <td>S/ 234.34</td>
                                                 <td>17-11-2021</td>
-                                                <td><i class="icon-edit icon--primary ms-2"></i></td>
-                                                <td><i class="icon-trash icon--trash ms-2"></i></td>
+                                                <td><i class="icon-edit icon--primary ms-2 g-pointer"></i></td>
+                                                <td><i class="icon-trash icon--trash ms-2 g-pointer"></i></td>
                                             </tr>
                                             <tr>
                                                 <th scope="row">322</th>
@@ -215,85 +219,16 @@
                                                 <td>S/ 234.34</td>
                                                 <td>S/ 234.34</td>
                                                 <td>17-11-2021</td>
-                                                <td><i class="icon-edit icon--primary ms-2"></i></td>
-                                                <td><i class="icon-trash icon--trash ms-2"></i></td>
+                                                <td><i class="icon-edit icon--primary ms-2 g-pointer"></i></td>
+                                                <td><i class="icon-trash icon--trash ms-2 g-pointer"></i></td>
                                             </tr>
                                         </tbody>
                                     </table>
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane fade" id="user" role="tabpanel" aria-labelledby="user-tab">
-                            <div class="row pt-3">
-                                <div class="col-md-12">
-                                    <div class="d-flex align-center w-100 pb-3 h-border--bottom">
-                                        <div class="searc ">
-                                            <input type="text" placeholder="Buscar...">
-                                            <i class="icon-search"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row pt-3">
-                                <div class="col-md-12">
-                                    <table class="table table-striped">
-                                        <thead>
-                                            <tr>
-                                                <th scope="col">ID</th>
-                                                <th scope="col">Nombre</th>
-                                                <th scope="col">Email</th>
-                                                <th scope="col">Teléfono</th>
-                                                <th scope="col">Rol</th>
-                                                <th scope="col">Tienda</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>322</td>
-                                                <td>Oscar Bardales</td>
-                                                <td>oscar.bardales@gmail.com</td>
-                                                <td>98765432</td>
-                                                <td>Admin</td>
-                                                <td>Todas</td>
-                                                <td><i class="icon-store icon--primary ms-2"></i></td>
-                                                <td><i class="icon-store icon--primary ms-2"></i></td>
-                                                <td><i class="icon-edit icon--primary ms-2"></i></td>
-                                                <td><i class="icon-trash icon--trash ms-2"></i></td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                    <table class="table table-striped">
-                                        <thead>
-                                            <tr>
-                                                <th scope="col">ID</th>
-                                                <th scope="col">Proveedor</th>
-                                                <th scope="col">Factura</th>
-                                                <th scope="col">Guía</th>
-                                                <th scope="col">Glosa</th>
-                                                <th scope="col">Val. venta</th>
-                                                <th scope="col">Val. IGV</th>
-                                                <th scope="col">Val. Total</th>
-                                                <th scope="col">Fecha</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <th scope="row">322</th>
-                                                <td>Altecno S.A.C.</td>
-                                                <td>10 234</td>
-                                                <td>-</td>
-                                                <td>Cambio 4.0 ...</td>
-                                                <td>S/ 234.34</td>
-                                                <td>S/ 234.34</td>
-                                                <td>S/ 234.34</td>
-                                                <td>17-11-2021</td>
-                                                <td><i class="icon-edit icon--primary ms-2"></i></td>
-                                                <td><i class="icon-trash icon--trash ms-2"></i></td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
+                        <div class="tab-pane fade" id="provee" role="tabpanel" aria-labelledby="provee-tab">
+                            <p>Producto</p>
                         </div>
                     </div>
                 </div>
