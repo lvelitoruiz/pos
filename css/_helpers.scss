@@ -89,21 +89,23 @@ $items: 8, 10, 11, 12, 14, 16, 18, 20, 22, 24, 30, 32, 40;
   border-bottom: 1px solid $text;
   color: $text;
   margin: 15px 10px 10px 0;
-  width: 100%;
+  width: 90%;
   font-size: 12px;
   position: relative;
-  padding-bottom: 10px;
+  padding-bottom: 5px;
+  margin-right: 10px;
+
+  select {
+    border: none;
+    padding-left: 10px;
+    width: 100%;
+    outline: none;
+  }
 
   &:focus {
     outline: none;
   }
 
-  i {
-    position: absolute;
-    color: $secondary;
-    right: 10px;
-    
-  }
 }
 
 .f-p {

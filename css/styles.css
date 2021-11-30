@@ -114,18 +114,20 @@
   border-bottom: 1px solid #222222;
   color: #222222;
   margin: 15px 10px 10px 0;
-  width: 100%;
+  width: 90%;
   font-size: 12px;
   position: relative;
-  padding-bottom: 10px;
+  padding-bottom: 5px;
+  margin-right: 10px;
+}
+.f-selec select {
+  border: none;
+  padding-left: 10px;
+  width: 100%;
+  outline: none;
 }
 .f-selec:focus {
   outline: none;
-}
-.f-selec i {
-  position: absolute;
-  color: #1BD5EA;
-  right: 10px;
 }
 
 .f-p {
@@ -1814,6 +1816,10 @@ body {
   color: #AAAAAA;
   padding-top: 10px;
   padding-left: 10px;
+}
+
+.size {
+  height: 150px;
 }
 
 .login--left {
