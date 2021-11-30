@@ -91,6 +91,7 @@
     width: 100%;
     border: 1px solid $tertiary;
     margin-bottom: 10px;
+    border-radius: 4px;
 
     select {
         border: none;
@@ -99,10 +100,12 @@
         font-size: 14px;
         outline: none;
         padding-left: 15px;
+        border-radius: 4px;
     }
     input {
         width: 100%;
         border: none;
+        border-radius: 4px;
         outline: none;
         height: 100%;
         font-size: 14px;

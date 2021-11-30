@@ -9,15 +9,6 @@
         height: 56px;
     }
     
-    &--secondary{
-        border: 1px solid;
-        border-radius: 3px;
-        color: green;
-        border-bottom: 1px;
-        width: 90px;
-        height: 30px;
-        padding-left: 10px;
-    }
     &--short{
         border-bottom: $primary 1px solid;
         color: $text;
