@@ -113,19 +113,52 @@
   border: none;
   border-bottom: 1px solid #222222;
   color: #222222;
-  margin: 15px 10px 10px 0;
-  width: 100%;
+  margin: 17px 10px 14px 5px;
+  width: 95%;
   font-size: 12px;
+  padding-top: 10px;
   position: relative;
-  padding-bottom: 10px;
+}
+.f-selec span {
+  color: #34538A;
+  font-weight: 500;
+  position: absolute;
+  bottom: 35px;
+}
+.f-selec select {
+  border: none;
+  outline: none;
+  height: 38px;
+  width: 100%;
 }
 .f-selec:focus {
   outline: none;
 }
-.f-selec i {
+
+.d-selec {
+  border: none;
+  border-bottom: 1px solid #222222;
+  color: #222222;
+  margin: 5px 10px 14px 0;
+  width: 100%;
+  font-size: 12px;
+  padding-top: 10px;
+  position: relative;
+}
+.d-selec span {
+  color: #34538A;
+  font-weight: 500;
   position: absolute;
-  color: #1BD5EA;
-  right: 10px;
+  bottom: 35px;
+}
+.d-selec select {
+  border: none;
+  outline: none;
+  height: 20px;
+  width: 100%;
+}
+.d-selec:focus {
+  outline: none;
 }
 
 .f-p {
@@ -316,15 +349,6 @@
   color: #222222;
   width: 100%;
   height: 56px;
-}
-.g-input--secondary {
-  border: 1px solid;
-  border-radius: 3px;
-  color: green;
-  border-bottom: 1px;
-  width: 90px;
-  height: 30px;
-  padding-left: 10px;
 }
 .g-input--short {
   border-bottom: #5393D0 1px solid;
@@ -1153,7 +1177,7 @@ input[type=checkbox]:checked ~ label {
   background: white;
   border-radius: 4px;
   border: solid 1px #ddd;
-  height: calc( 100vh - 146px);
+  height: calc(100vh - 146px);
   margin: 50px 70px;
   padding-top: 24px;
   position: relative;
@@ -1161,7 +1185,7 @@ input[type=checkbox]:checked ~ label {
 .body-content--fix .body {
   overflow-y: auto;
   overflow-x: hidden;
-  height: calc( 100vh - 252px);
+  height: calc(100vh - 252px);
   padding-bottom: 20px;
   padding-left: 24px;
   padding-right: 24px;
@@ -1176,7 +1200,7 @@ input[type=checkbox]:checked ~ label {
   background: white;
   border-radius: 4px;
   border: solid 1px #ddd;
-  height: calc( 100vh - 146px);
+  height: calc(100vh - 146px);
   margin: 50px 70px;
   padding: 24px;
   overflow: auto;
@@ -1186,7 +1210,7 @@ input[type=checkbox]:checked ~ label {
   background: white;
   border-radius: 4px;
   border: solid 1px #ddd;
-  height: calc( 100vh - 146px);
+  height: calc(100vh - 146px);
   margin: 50px 70px;
   padding: 20px 80px;
   overflow: auto;
@@ -1796,6 +1820,7 @@ body {
   width: 100%;
   border: 1px solid #AAAAAA;
   margin-bottom: 10px;
+  border-radius: 4px;
 }
 .sin select {
   border: none;
@@ -1804,16 +1829,27 @@ body {
   font-size: 14px;
   outline: none;
   padding-left: 15px;
+  border-radius: 4px;
 }
 .sin input {
   width: 100%;
   border: none;
+  border-radius: 4px;
   outline: none;
   height: 100%;
   font-size: 14px;
   color: #AAAAAA;
   padding-top: 10px;
   padding-left: 10px;
+}
+
+.size {
+  height: 150px;
+}
+
+.scroll {
+  overflow-x: scroll;
+  max-height: 110px;
 }
 
 .login--left {

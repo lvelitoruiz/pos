@@ -88,22 +88,62 @@ $items: 8, 10, 11, 12, 14, 16, 18, 20, 22, 24, 30, 32, 40;
   border: none;
   border-bottom: 1px solid $text;
   color: $text;
-  margin: 15px 10px 10px 0;
-  width: 100%;
+  margin: 17px 10px 14px 5px;
+  width: 95%;
   font-size: 12px;
+  padding-top: 10px;
   position: relative;
-  padding-bottom: 10px;
+
+  span {
+    color: $five;
+    font-weight: 500;
+    position: absolute;
+    bottom: 35px;
+
+  }
+
+  select {
+    border: none;
+    outline: none;
+    height: 38px;
+    width: 100%;
+  }
 
   &:focus {
     outline: none;
   }
 
-  i {
+}
+
+.d-selec {
+  border: none;
+  border-bottom: 1px solid $text;
+  color: $text;
+  margin: 5px 10px 14px 0;
+  width: 100%;
+  font-size: 12px;
+  padding-top: 10px;
+  position: relative;
+
+  span {
+    color: $five;
+    font-weight: 500;
     position: absolute;
-    color: $secondary;
-    right: 10px;
-    
+    bottom: 35px;
+
   }
+
+  select {
+    border: none;
+    outline: none;
+    height: 20px;
+    width: 100%;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
 }
 
 .f-p {
