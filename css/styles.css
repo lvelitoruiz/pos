@@ -1177,7 +1177,7 @@ input[type=checkbox]:checked ~ label {
   background: white;
   border-radius: 4px;
   border: solid 1px #ddd;
-  height: calc(100vh - 146px);
+  height: calc( 100vh - 146px);
   margin: 50px 70px;
   padding-top: 24px;
   position: relative;
@@ -1185,7 +1185,7 @@ input[type=checkbox]:checked ~ label {
 .body-content--fix .body {
   overflow-y: auto;
   overflow-x: hidden;
-  height: calc(100vh - 252px);
+  height: calc( 100vh - 252px);
   padding-bottom: 20px;
   padding-left: 24px;
   padding-right: 24px;
@@ -1200,7 +1200,7 @@ input[type=checkbox]:checked ~ label {
   background: white;
   border-radius: 4px;
   border: solid 1px #ddd;
-  height: calc(100vh - 146px);
+  height: calc( 100vh - 146px);
   margin: 50px 70px;
   padding: 24px;
   overflow: auto;
@@ -1210,7 +1210,7 @@ input[type=checkbox]:checked ~ label {
   background: white;
   border-radius: 4px;
   border: solid 1px #ddd;
-  height: calc(100vh - 146px);
+  height: calc( 100vh - 146px);
   margin: 50px 70px;
   padding: 20px 80px;
   overflow: auto;
